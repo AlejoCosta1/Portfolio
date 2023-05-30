@@ -29,7 +29,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-    background: #0c192c;
+    background: linear-gradient(to right, #0c192c, #2d425f);
 }
 
 /* FONDO */
@@ -63,14 +63,15 @@ body {
 
 @keyframes animate {
     0% {
-        transform: translateY(2000px) scale(0);
+        transform: translateY(3000px) scale(0);
     }
     100% {
         transform: translateY(-50vh) scale(0.5);
     }
 }
 
-/* INICIO */
+/* HEADER */
+
 .container {
     padding: 20px 100px 50px;
     max-width: 100%;
@@ -83,6 +84,7 @@ body {
 .container .titulo h1 a{
     font-size: 54px;
     color: aqua;
+    text-decoration:solid #fff;
     /*font-family: 'Vina Sans', cursive;*/
     transition: all .5s ease-out;
 }
@@ -117,6 +119,73 @@ body {
     background: #fff;
     color: #000;
     /* text-decoration: underline #ff7b00 solid 2px; */
+}
+
+/* INICIO */
+.inicio {
+    height: 700px;
+    position: relative;
+    text-align: left;
+    margin: 150px 0 0 100px;
+}
+
+.inicio #desarrollador {
+    font-size: 62px;
+    color: #fff;
+}
+
+.inicio #descripcion {
+    margin-top: 15px;
+    width: 70%;
+    color: #d6d6d6;
+}
+
+.inicio button {
+    background: linear-gradient(to right, #f04e03, #db7500);
+    color: #fff;
+    font-size: 12px;
+    margin-top: 30px;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    transition: all .3s ease-in;
+}
+
+.inicio button:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 1px 20px #ff7300;
+}
+
+.inicio nav {
+    position: absolute;
+    display: flex;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.inicio nav li a{
+    color: #fff;
+    padding: 10px;
+    transition: all .3s ease-in;
+}
+
+.inicio nav li a:hover {
+    transform: scale(1.2);   
+}
+
+.inicio nav li #github:hover {
+    color: #313131;
+    text-shadow: 1px 1px 20px #000000;
+}
+
+.inicio nav li #twitter:hover {
+    color: #179CF0;
+    text-shadow: 1px 1px 20px #00b7ff;
+}
+
+.inicio nav li #facebook:hover {
+    color: #1977F3;
+    text-shadow: 1px 1px 20px #0112ff;
 }
 
 /* ORBITS */
@@ -344,4 +413,21 @@ body {
     color: #000;
     padding: 2px;
     border-radius: 20px;
+}
+
+.box-proyects {
+    display: flex;
+    width: 100%;
+    grid-template-columns: repeat(3, 50px);
+    grid-column: auto;
+}
+
+.box-proyects .proyects-progm {
+    width: 100%;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(10, 50px);
+    grid-column: auto;
+    width: 300px;
+    height: 100px;
+    background: red;
 }

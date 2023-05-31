@@ -63,7 +63,7 @@ body {
 
 @keyframes animate {
     0% {
-        transform: translateY(3000px) scale(0);
+        transform: translateY(3700px) scale(0);
     }
     100% {
         transform: translateY(-50vh) scale(0.5);
@@ -173,17 +173,17 @@ body {
     transform: scale(1.2);   
 }
 
-.inicio nav li #github:hover {
+#github:hover {
     color: #313131;
     text-shadow: 1px 1px 20px #000000;
 }
 
-.inicio nav li #twitter:hover {
+#twitter:hover {
     color: #179CF0;
     text-shadow: 1px 1px 20px #00b7ff;
 }
 
-.inicio nav li #facebook:hover {
+#linkedin:hover {
     color: #1977F3;
     text-shadow: 1px 1px 20px #0112ff;
 }
@@ -385,49 +385,159 @@ body {
     box-shadow: 1px 2px 20px #fe006e;
 }
 
-.proyects {
-    position: absolute;
+/* PROYECTS */
+
+#portfolio {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.titulo-seccion {
+    text-align: center;
+    font-size: 52px;
+    color: #fff;
+}
+
+#portfolio .proyects-options{
     display: flex;
     justify-content: center;
-    width: 100%;
-    height: 500px;
+    margin-top: 2.5rem;
+    margin-left: 35px;
+    font-size: 22px;
 }
 
-.proyects h1 {
+#portfolio .proyects-options button {
+    background: none;
+    border: #000000c5 1px solid;
     color: #fff;
-    font-size: 42px;
+    width: 9.60rem;
+    height: 3.12rem;
+    margin-right: 3rem;
+    border-radius: 35px;
+    transition: all .3s ease-in;
 }
 
-.proyects .types-proyects li {
-    display: inline-block;
-    margin: 10px;
+#portfolio .proyects-options button:hover {
+    background: #000;
 }
 
-.proyects .types-proyects li a{
-    color: #fff;
-    transition: all .3s ease-out;
-}
-
-.proyects .types-proyects li a:hover{
-    background: #fff;
-    color: #000;
-    padding: 2px;
-    border-radius: 20px;
-}
-
-.box-proyects {
+#portfolio .fila {
     display: flex;
-    width: 100%;
-    grid-template-columns: repeat(3, 50px);
-    grid-column: auto;
+    justify-content: space-between;
+    margin: 30px 0;
 }
 
-.box-proyects .proyects-progm {
+#portfolio .fila .proyecto {
+    max-width: 450px;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+#portfolio .fila .proyecto img {
     width: 100%;
-    grid-template-columns: repeat(3, 50px);
-    grid-template-rows: repeat(10, 50px);
-    grid-column: auto;
-    width: 300px;
-    height: 100px;
-    background: red;
+    height: 100%;
+    filter: grayscale(0.8);
+    object-fit: cover;
+    transition: .5s;
+}
+
+#portfolio .fila .proyecto:hover img {
+    filter: grayscale(0);
+}
+
+#portfolio .fila .proyecto .info {
+    position: absolute;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ff5080;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: .5s;
+}
+
+#portfolio .fila .proyecto:hover .info {
+    opacity: 1;
+    bottom: 0;
+}
+
+/* CONTACTO */
+
+#contacto {
+    padding: 50px;
+    margin-top: 50px;
+}
+
+#contacto .titulo-seccion {
+    margin-bottom: 30px;
+}
+
+#contacto .contenedor-form {
+    max-width: 1100px;
+    margin: auto;
+}
+
+#contacto .contenedor-form .fila {
+    margin-bottom: 15px;
+}
+
+#contacto .contenedor-form .mitad {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+#contacto .contenedor-form input,
+#contacto .contenedor-form textarea {
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid #919191;
+}
+
+#contacto .contenedor-form .mitad input {
+    width: 50%;
+}
+
+#contacto .contenedor-form .input-full {
+    width: 100%;
+}
+
+#contacto .btn-enviar {
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: .5s;
+    padding: 10px 15px !important;
+}
+
+#contacto .btn-enviar:hover {
+    background-color: #424242;
+    color: #fff;
+}
+
+
+/* ------------------- */
+/* F O O T E E R */
+/* ------------------- */
+
+footer {
+    background-color: #00000041;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+    font-size: 26px;
 }

@@ -15,6 +15,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+:root {
+    --mx-height: 90%;
+}
+
 body::-webkit-scrollbar {
     width: 10px;
 }
@@ -32,6 +36,26 @@ body {
     background: linear-gradient(to right, #0c192c, #2d425f);
 }
 
+/* ANIMACIONES */
+
+@keyframes translateY-animation {
+    0% {
+        transform: translateY(230rem) scale(0);
+    }
+    100% {
+        transform: translateY(-50vh) scale(0.5);
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 /* FONDO */
 .background .stars {
     position: relative;
@@ -46,7 +70,7 @@ body {
     border-radius: 50%;
     opacity: 0.8;
     box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
-    animation: animate 15s linear infinite;
+    animation: translateY-animation 15s linear infinite;
     animation-duration: calc(1200s / var(--i));
     z-index: -1;
 }
@@ -59,15 +83,6 @@ body {
 .background .stars span:nth-child(5n-1) {
     box-shadow: 0 0 0 10px #ffffff44, 0 0 50px #ffffff, 0 0 100px #d9d9d9;
     background: #f5f0f1;
-}
-
-@keyframes animate {
-    0% {
-        transform: translateY(3700px) scale(0);
-    }
-    100% {
-        transform: translateY(-50vh) scale(0.5);
-    }
 }
 
 /* HEADER */
@@ -149,6 +164,7 @@ body {
     height: 50px;
     border-radius: 20px;
     transition: all .3s ease-in;
+    animation: botton-opacity 2s ease-out;
 }
 
 .inicio button:hover {
@@ -251,15 +267,6 @@ body {
 
 .rotar{
     animation: rotation 10s infinite linear;
-}
-
-@keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
 }
 
 .sub-orbit {
@@ -445,6 +452,7 @@ body {
 
 #portfolio .fila .proyecto:hover img {
     filter: grayscale(0);
+    transform: scale(1.02);
 }
 
 #portfolio .fila .proyecto .info {
@@ -540,4 +548,9 @@ footer a {
     display: inline-block;
     margin: 5px;
     font-size: 26px;
+}
+
+
+@media screen and (max-width: 1280px) and (min-width: 768px) {
+
 }

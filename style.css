@@ -398,7 +398,7 @@ header .nav-menu li a:hover {
 /* -------------------- */
 
 #briefcase {
-    max-width: 140vh;
+    max-width: 132vh;
     margin: 40vh auto;
     display: grid;
     justify-content: center;
@@ -497,14 +497,14 @@ header .nav-menu li a:hover {
 
 #contact 
 #contact-description {
-    width: 135vh;
+    width: 125vh;
 }
 
 #contact .half-input {
     margin-bottom: 0.62rem;
     display: grid;
     justify-content: space-between;
-    grid-template-columns: repeat(2, 67.5vh);
+    grid-template-columns: repeat(2, 62.5vh);
 }
 
 #contact .input-full {

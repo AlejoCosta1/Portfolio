@@ -649,7 +649,7 @@ footer a {
 
     @keyframes translateY-animation {
         0% {
-            transform: translateY(208rem) scale(0);
+            transform: translateY(202rem) scale(0);
         }
         100% {
             transform: translateY(-50vh) scale(0.5);
@@ -707,8 +707,8 @@ footer a {
 
     #orbit-skills .planet {
         font-size: 2rem;
-        width: 5.25rem;
-        height: 5.25rem;
+        width: 4.5rem;
+        height: 4.5rem;
     }
 
 
@@ -745,7 +745,7 @@ footer a {
     /* -------------------- */
 
     #skills {
-        margin-top: -40rem;
+        margin-top: -34.5rem;
     }
     
     #skills .cards {
@@ -774,6 +774,20 @@ footer a {
     #briefcase {
         max-width: 132vh;
         margin: 45vh auto;
+    }
+
+    #contact {
+        margin-top: -15vh;
+        margin-bottom: 30vh;
+    }
+
+    #contact 
+    #contact-description {
+        width: 110vh;
+    }
+
+    #contact .half-input {
+        grid-template-columns: repeat(2, 56vh);
     }
 
 }

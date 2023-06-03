@@ -3,10 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
 
-/* ----------------------------------------- */
-/* GENERAL PARAMETERS - PARAMETROS GENERALES */
-/* ----------------------------------------- */
-
+/* PARAMETROS GENERALES */
 * {
     user-select: none;
     margin: 0;
@@ -162,12 +159,12 @@ header .nav-menu li a:hover {
     margin: 150px 0 0 100px;
 }
 
-#home #desarrollador {
+#home .desarrollador {
     font-size: 62px;
     color: #fff;
 }
 
-#home #descripcion {
+#home .description {
     margin-top: 15px;
     width: 70%;
     color: #d6d6d6;
@@ -310,9 +307,8 @@ header .nav-menu li a:hover {
     clip-path: circle(100px at 0px 0px);
 }
 
-/* -------------------- */
-/* SKILLS - HABILIDADES */
-/* -------------------- */
+
+/* HABILIDADES */
 
 #skills {
     margin: 200px 380px;
@@ -531,6 +527,7 @@ header .nav-menu li a:hover {
 
 #contact .btn-enviar {
     text-align: center;
+    margin-top: 15vh;
     width: 15rem;
     height: 3.12rem;
     display: block;

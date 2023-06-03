@@ -334,7 +334,8 @@
     function typeHello() {
         new TypeIt("#simpleUsage", {
             lifeLike: false,
-            speed: 0
+            speed: 0,
+            loop: true
         })
             .delete(28, { instant: true })
             .pause(125)
@@ -561,8 +562,8 @@
             .delete(1)
             .pause(125)
             .delete(1)
-            .go();
-    }
+            .go(); // Iniciar la animación
+        }
     typeHello();
 </script>
 </body>

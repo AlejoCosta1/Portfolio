@@ -3,7 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
 
-/* PARAMETROS GENERALES */
+/* ----------------------------------------- */
+/* GENERAL PARAMETERS - PARAMETROS GENERALES */
+/* ----------------------------------------- */
+
 * {
     user-select: none;
     margin: 0;
@@ -307,8 +310,9 @@ header .nav-menu li a:hover {
     clip-path: circle(100px at 0px 0px);
 }
 
-
-/* HABILIDADES */
+/* -------------------- */
+/* SKILLS - HABILIDADES */
+/* -------------------- */
 
 #skills {
     margin: 200px 380px;

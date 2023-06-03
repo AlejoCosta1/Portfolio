@@ -37,9 +37,9 @@ body {
     max-width: 100%;
 }
 
-/* ----------- */
-/* ANIMACIONES */
-/* ----------- */
+/* ------------------------ */
+/* ANIMATIONS - ANIMACIONES */
+/* ------------------------ */
 
 @keyframes translateY-animation {
     0% {
@@ -561,7 +561,3 @@ footer a {
     margin: 5px;
     font-size: 26px;
     }
-
-@media screen and (max-width: 1339px)  and (min-width: 786px){
-    
-}

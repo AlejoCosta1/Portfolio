@@ -230,6 +230,7 @@ header .nav-menu li a:hover {
 }
 
 #orbit-skills .planets {
+    text-shadow: #00000084 1px 1px 0.1px;
     display: flex;
     justify-content: center;
 }
@@ -480,7 +481,9 @@ header .nav-menu li a:hover {
     font-size: 1.5rem;
 }
 
-/* CONTACTO */
+/* ------------------ */
+/* CONTACT - CONTACTO */
+/* ------------------ */
 
 #contact {
     margin-top: -15vh;
@@ -542,9 +545,9 @@ header .nav-menu li a:hover {
 }
 
 
-/* ------------------- */
-/* F O O T E E R */
-/* ------------------- */
+/* ---------------------- */
+/* FOOTER - PIÉ DE PAGINA */
+/* ---------------------- */
 
 footer {
     display: block;
@@ -561,6 +564,10 @@ footer a {
     margin: 0.3rem;
     font-size: 1.625rem;
     }
+
+/* ------------------------------------- */
+/* RESPONSIVE DESIGN - DISEÑO RESPONSIVE */
+/* ------------------------------------- */
 
 @media screen and (max-width: 1600px) {
 
@@ -770,11 +777,19 @@ footer a {
     #skills .cards .card-description {
         font-size: 0.75rem;
     }
+
+    /* --------------------- */
+    /* BRIEFCASE - PORTFOLIO */
+    /* --------------------- */
     
     #briefcase {
         max-width: 132vh;
         margin: 45vh auto;
     }
+
+    /* -------------------- */
+    /* CONTACT - CONTACTAME */
+    /* -------------------- */
 
     #contact {
         margin-top: -15vh;
@@ -800,7 +815,7 @@ footer a {
 
     @keyframes translateY-animation {
         0% {
-            transform: translateY(233rem) scale(0);
+            transform: translateY(200rem) scale(0);
         }
         100% {
             transform: translateY(-50vh) scale(0.5);
@@ -813,15 +828,20 @@ footer a {
     /* ------------- */
 
     #home {
-        margin: 8.375rem 0 0 5.2rem;
+        margin: 4.5rem 0 0 4.2rem;
     }
 
     #home .desarrollador {
-        font-size: 2.875rem;
+        font-size: 2.5rem;
     }
 
     #home .description {
-        font-size: 1.15rem;
+        font-size: 1.1rem;
+    }
+
+    #home .cv-download {
+        width: 8.16rem;
+        height: 2.652rem;
     }
 
     /* ------------------------------------ */
@@ -830,14 +850,15 @@ footer a {
 
 
     #orbit-skills .first-orbit {
+        margin-top: -10rem;
         width: 38.5rem;
         height: 38.5rem;
     }
 
     #orbit-skills .planet {
-        font-size: 2.4rem;
-        width: 5.25rem;
-        height: 5.25rem;
+        font-size: 2rem;
+        width: 4.5rem;
+        height: 4.5rem;
     }
 
 
@@ -856,17 +877,34 @@ footer a {
     }
 
     .fa-python {
-        margin-top: -2.4rem;
+        margin-top: -2.1rem;
     }
 
     .sub-orbit {
-        width: 6.75rem;
-        height: 6.75rem;
+        width: 6.3rem;
+        height: 6.3rem;
+        border: solid 15px #ffffff1e;
     }
 
     .progress{
-        width: 6.75rem;
-        height: 6.75rem;
+        width: 6.3rem;
+        height: 6.3rem;
+    }
+
+    .html-progress {
+        border: solid 15px #E74F22;
+    }
+    
+    .css-progress {
+        border: solid 15px #2465f1;
+    }
+    
+    .js-progress {
+        border: solid 15px #F7DF1E;
+    }
+    
+    .python-progress {
+        border: solid 15px #a6ff00;
     }
 
     /* -------------------- */
@@ -874,16 +912,19 @@ footer a {
     /* -------------------- */
 
     #skills {
-        margin-top: -37rem;
+        margin-top: -35rem;
     }
     
     #skills .cards {
-        width: 80%;
+        width: 65%;
         height: 25rem;
+    }
+
+    #skills .card-logo {
+        padding: 3rem;
     }
     
     #skills .card-title {
-        padding: 5px 0 0 0;
         font-size: 1.25rem;
         letter-spacing: 2px;
     }
@@ -893,13 +934,30 @@ footer a {
     }
 
     #skills .cards .card-description {
-        font-size: 0.9rem;
+        font-size: 0.75rem;
     }
     
+    /* --------------------- */
+    /* BRIEFCASE - PORTFOLIO */
+    /* --------------------- */
+
     #briefcase {
-        max-width: 118vh;
+        max-width: 150vh;
         margin: 45vh auto;
     }
+
+    .title-seccion {
+        font-size: 3rem;
+    }
+
+    #briefcase .proyects-options button {
+        width: 8.16rem;
+        height: 2.652rem;
+    }
+
+    /* -------------------- */
+    /* CONTACT - CONTACTAME */
+    /* -------------------- */
 
     #contact {
         margin-top: -15vh;
@@ -908,11 +966,348 @@ footer a {
 
     #contact 
     #contact-description {
-        width: 110vh;
+        width: 140vh;
     }
 
     #contact .half-input {
-        grid-template-columns: repeat(2, 56vh);
+        grid-template-columns: repeat(2, 68vh);
+    }
+
+}
+
+@media screen and (max-width: 1152px) {
+
+    /* ------------------------ */
+    /* ANIMATIONS - ANIMACIONES */
+    /* ------------------------ */    
+
+    @keyframes translateY-animation {
+        0% {
+            transform: translateY(200rem) scale(0);
+        }
+        100% {
+            transform: translateY(-50vh) scale(0.5);
+            transform: translateX(-5vh) scale(0.25);
+        }
+    }
+
+    /* ------------- */
+    /* HOME - INICIO */
+    /* ------------- */
+
+    #home {
+        margin: 8.5rem 0 0 4.2rem;
+    }
+
+    #home .desarrollador {
+        font-size: 3rem;
+    }
+
+    #home .description {
+        font-size: 1.1rem;
+    }
+
+    #home .cv-download {
+        width: 8.16rem;
+        height: 2.652rem;
+    }
+
+    /* ------------------------------------ */
+    /* SKILLS ORBIT - ORBITA DE HABILIDADES */
+    /* ------------------------------------ */
+
+
+    #orbit-skills .first-orbit {
+        margin-top: -10rem;
+        width: 35.85rem;
+        height: 35.85rem;
+    }
+
+    #orbit-skills .planet {
+        font-size: 1.7rem;
+        width: 4rem;
+        height: 4rem;
+    }
+
+
+    .fa-html5 {
+        margin-top: 33.8rem;
+    }
+
+    .fa-css3-alt {
+        margin-top: 14.95rem;
+        margin-left: 36.4rem;
+    }
+
+    .fa-js {
+        margin-right: 36.4rem;
+        margin-top: 14.95rem;
+    }
+
+    .fa-python {
+        margin-top: -1.95rem;
+    }
+
+    .sub-orbit {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .progress{
+        width: 5rem;
+        height: 5rem;
+    }
+
+    /* -------------------- */
+    /* SKILLS - HABILIDADES */
+    /* -------------------- */
+
+    #skills {
+        margin-top: -35rem;
+    }
+    
+    #skills .cards {
+        width: 75%;
+        height: 25rem;
+    }
+
+    #skills .card-logo {
+        padding: 3rem;
+    }
+    
+    #skills .card-title {
+        font-size: 1.25rem;
+        letter-spacing: 2px;
+    }
+    
+    #skills .cards hr {
+        margin-bottom: 1rem;
+    }
+
+    #skills .cards .card-description {
+        font-size: 0.75rem;
+    }
+    
+    /* --------------------- */
+    /* BRIEFCASE - PORTFOLIO */
+    /* --------------------- */
+
+    #briefcase {
+        max-width: 120vh;
+        margin: 45vh auto;
+    }
+
+    .title-seccion {
+        font-size: 2.5rem;
+    }
+
+    #briefcase .proyects-options button {
+        width: 8.16rem;
+        height: 2.652rem;
+        font-size: 0.8rem;
+    }
+
+    /* -------------------- */
+    /* CONTACT - CONTACTAME */
+    /* -------------------- */
+
+    #contact {
+        margin-top: -15vh;
+        margin-bottom: 30vh;
+    }
+
+    #contact 
+    #contact-description {
+        width: 120vh;
+    }
+
+    #contact .half-input {
+        grid-template-columns: repeat(2, 58vh);
+    }
+
+    footer {
+        padding: 1rem;
+    }
+
+    footer a {
+        font-size: 1.3rem;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    /* ------------------------ */
+    /* ANIMATIONS - ANIMACIONES */
+    /* ------------------------ */    
+
+    @keyframes translateY-animation {
+        0% {
+            transform: translateY(197rem) scale(0);
+        }
+        100% {
+            transform: translateY(-50vh) scale(0.5);
+            transform: translateX(0vh) scale(0.25);
+        }
+    }
+
+    /* ------------- */
+    /* HOME - INICIO */
+    /* ------------- */
+
+    #home {
+        margin: 5.5rem 0 0 4.2rem;
+    }
+
+    #home .desarrollador {
+        font-size: 2.5rem;
+    }
+
+    #home .description {
+        font-size: 1rem;
+    }
+
+    #home .cv-download {
+        width: 8.16rem;
+        height: 2.652rem;
+    }
+
+    /* ------------------------------------ */
+    /* SKILLS ORBIT - ORBITA DE HABILIDADES */
+    /* ------------------------------------ */
+
+
+    #orbit-skills .first-orbit {
+        margin-top: -10rem;
+        width: 30.25rem;
+        height: 30.25rem;
+    }
+
+    #orbit-skills .planet {
+        font-size: 1.7rem;
+        width: 4rem;
+        height: 4rem;
+    }
+
+
+    .fa-html5 {
+        margin-top: 28rem;
+    }
+
+    .fa-css3-alt {
+        margin-top: 13.8rem;
+        margin-left: 30.4rem;
+    }
+
+    .fa-js {
+        margin-right: 30.4rem;
+        margin-top: 13.8rem;
+    }
+
+    .fa-python {
+        margin-top: -1.8rem;
+    }
+
+    .sub-orbit {
+        width: 5rem;
+        height: 5rem;
+        border: solid 15px #ffffff1e;
+    }
+
+    .progress{
+        width: 4.9rem;
+        height: 4.9rem;
+    }
+
+    .html-progress {
+        border: solid 15px #E74F22;
+    }
+    
+    .css-progress {
+        border: solid 15px #2465f1;
+    }
+    
+    .js-progress {
+        border: solid 15px #F7DF1E;
+    }
+    
+    .python-progress {
+        border: solid 15px #a6ff00;
+    }
+
+    /* -------------------- */
+    /* SKILLS - HABILIDADES */
+    /* -------------------- */
+
+    #skills {
+        margin-top: -30rem;
+    }
+    
+    #skills .cards {
+        width: 85%;
+        height: 22rem;
+    }
+
+    #skills .card-logo {
+        padding: 3rem;
+    }
+    
+    #skills .card-title {
+        font-size: 1.25rem;
+        letter-spacing: 2px;
+    }
+    
+    #skills .cards hr {
+        margin-bottom: 1rem;
+    }
+
+    #skills .cards .card-description {
+        font-size: 0.65rem;
+    }
+    
+    /* --------------------- */
+    /* BRIEFCASE - PORTFOLIO */
+    /* --------------------- */
+
+    #briefcase {
+        max-width: 120vh;
+        margin: 45vh auto;
+    }
+
+    .title-seccion {
+        font-size: 2.5rem;
+    }
+
+    #briefcase .proyects-options button {
+        width: 8.16rem;
+        height: 2.652rem;
+        font-size: 0.8rem;
+    }
+
+    /* -------------------- */
+    /* CONTACT - CONTACTAME */
+    /* -------------------- */
+
+    #contact {
+        margin-top: -15vh;
+        margin-bottom: 30vh;
+    }
+
+    #contact 
+    #contact-description {
+        width: 115vh;
+    }
+
+    #contact .half-input {
+        grid-template-columns: repeat(2, 58vh);
+    }
+
+    footer {
+        padding: 1rem;
+    }
+
+    footer a {
+        font-size: 1.3rem;
     }
 
 }

@@ -220,12 +220,12 @@ header .nav-menu li a:hover {
 
 #orbit-skills {
     display: flex;
+    margin: auto;
     justify-content: center;
     color: #fff;
 }
 
 #orbit-skills .first-orbit {
-    position: absolute;
     width: 55rem;
     height: 55rem;
     border: dashed 0.5em;
@@ -311,18 +311,19 @@ header .nav-menu li a:hover {
 /* HABILIDADES */
 
 #skills {
-    margin: 200px 380px;
     display: flex;
     text-align: center;
+    margin-top: -725px;
 }
 
 #skills .cards {
-    width: 100%;
+    display: grid;
+    justify-content: space-around;
+    margin: auto;
+    width: 130vh;
     height: 550px;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 50px;
-    display: grid;
-    justify-content: space-around;
 }
 
 #skills .card-1,

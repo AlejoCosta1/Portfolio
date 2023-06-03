@@ -1,8 +1,5 @@
 /* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap, https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap, https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
 /* PARAMETROS GENERALES */
 * {
     user-select: none;
@@ -16,11 +13,11 @@
 }
 
 :root {
-    --mx-height: 90%;
+    --mx-height: 100%;
 }
 
 body::-webkit-scrollbar {
-    width: 10px;
+    width: 0.7rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -29,12 +26,12 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     background-color: rgb(84, 84, 84);
-    border-radius: 50px;
+    border-radius: 3.125rem;
 }
 
 body {
     background: linear-gradient(to right, #0c192c, #2d425f);
-    max-width: 100%;
+    max-width: var(--mx-height);
 }
 
 /* ------------------------ */
@@ -78,25 +75,25 @@ body {
 }
 
 #background .stars span {
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
     background: #4fc3dc;
     margin: 0 4px;
     border-radius: 50%;
     opacity: 0.8;
-    box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+    box-shadow: 0 0 0 0.625rem #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
     animation: translateY-animation 15s linear infinite;
     animation-duration: calc(1200s / var(--i));
     z-index: -1;
 }
 
 #background .stars span:nth-child(even) {
-    box-shadow: 0 0 0 10px #8b0e3944, 0 0 50px #ff2d75, 0 0 100px #4fc3dc;
+    box-shadow: 0 0 0 0.625rem #8b0e3944, 0 0 50px #ff2d75, 0 0 100px #4fc3dc;
     background: #ff0040;
 }
 
 #background .stars span:nth-child(5n-1) {
-    box-shadow: 0 0 0 10px #ffffff44, 0 0 50px #ffffff, 0 0 100px #d9d9d9;
+    box-shadow: 0 0 0 0.625rem #ffffff44, 0 0 50px #ffffff, 0 0 100px #d9d9d9;
     background: #f5f0f1;
 }
 
@@ -105,7 +102,7 @@ body {
 /* ----------------------- */
 
 header {
-    margin: 0 11vh 0 11vh;
+    margin: 0 11vh;
     display: flex;
     text-align: center;
     position: relative;
@@ -113,7 +110,7 @@ header {
 }
 
 header .header-logo h1 a{
-    font-size: 54px;
+    font-size: 3.33rem;
     color: aqua;
     text-decoration: solid #fff;
     transition: all .5s ease-out;
@@ -125,20 +122,20 @@ header .header-logo h1:hover{
 }
 
 header .nav-menu li {
-    padding: 10px;
-    margin: 10px;
-    font-size: 22px;
+    padding: 0.625rem;
+    margin: 0.625rem;
+    font-size: 1.5rem;
     display: inline-block;
-    width: 120px;
+    width: 7.5rem;
 }
 
 header .nav-menu li a {
     display: flex;
-    width: 150px;
+    width: 9.5rem;
     color: #ffffff;
     text-align: center;
     justify-content: center;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     transition: all .3s ease-out;
 }
 
@@ -153,19 +150,19 @@ header .nav-menu li a:hover {
 /* ------------- */
 
 #home {
-    height: 700px;
+    height: 43.75rem;
     position: relative;
     text-align: left;
-    margin: 150px 0 0 100px;
+    margin: 9.375rem 0 0 6.25rem;
 }
 
 #home .desarrollador {
-    font-size: 62px;
+    font-size: 3.875rem;
     color: #fff;
 }
 
 #home .description {
-    margin-top: 15px;
+    margin-top: 1rem;
     width: 70%;
     color: #d6d6d6;
 }
@@ -173,11 +170,11 @@ header .nav-menu li a:hover {
 #home .cv-download {
     background: linear-gradient(to right, #f04e03, #db7500);
     color: #fff;
-    font-size: 12px;
-    margin-top: 30px;
-    width: 150px;
-    height: 50px;
-    border-radius: 20px;
+    font-size: 0.75rem;
+    margin-top: 1.875rem;
+    width: 9.375rem;
+    height: 3.125rem;
+    border-radius: 1.25rem;
     transition: all .3s ease-in;
 }
 
@@ -189,13 +186,13 @@ header .nav-menu li a:hover {
 .contact-icons {
     position: absolute;
     display: flex;
-    margin-top: 30px;
-    font-size: 30px;
+    margin-top: 2rem;
+    font-size: 2rem;
 }
 
 #home nav li a{
     color: #fff;
-    padding: 10px;
+    padding: 0.625rem;
     transition: all .3s ease-in;
 }
 
@@ -321,15 +318,15 @@ header .nav-menu li a:hover {
     justify-content: space-around;
     margin: auto;
     width: 130vh;
-    height: 550px;
+    height: 34rem;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 50px;
+    grid-column-gap: 3.125rem;
 }
 
 #skills .card-1,
 #skills .card-2,
 #skills .card-3 {
-    border-radius: 35px;
+    border-radius: 2.125rem;
     box-shadow: 1px 2px 10px black;
     background: #fff;
     transition: all .3s;
@@ -342,35 +339,35 @@ header .nav-menu li a:hover {
 }
 
 #skills .card-logo {
-    padding: 60px;
-    width: 5px;
-    height: 5px;
+    padding: 4rem;
+    width: 0.312rem;
+    height: 0.312rem;
     border-radius: 50%;
-    font-size: 25px;
+    font-size: 1.562rem;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px auto;
+    margin: 1.25rem auto;
 }
 
 #skills .card-title {
     padding: 5px 0 0 0;
-    font-size: 22px;
+    font-size: 1.25rem;
     letter-spacing: 2px;
 }
 
 #skills .cards hr {
-    height: 8px;
+    height: 0.5rem;
     width: 50%;
-    border-radius: 50px;
+    border-radius: 3.125rem;
     display: flex;
     margin: auto;
-    margin-bottom: 25px;
+    margin-bottom: 3.125rem;
 }
 
 #skills .cards .card-description {
-    padding: 0 20px 0 20px;
+    padding: 0 0.312rem 0 0.312rem;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -378,19 +375,19 @@ header .nav-menu li a:hover {
 #skills .card-1 .card-logo,
 #line-1 {
     background: linear-gradient(to right, #02d8f8, #0048ff);
-    box-shadow: 1px 2px 20px #0048ff;
+    box-shadow: 1px 2px 30px #0048ff;
 }
 
 #skills .card-2 .card-logo,
 #line-2 {
     background: linear-gradient(to right, #ff7700, #e2ee02);
-    box-shadow: 1px 2px 20px #ff7700;
+    box-shadow: 1px 2px 30px #ff7700;
 }
 
 #skills .card-3 .card-logo,
 #line-3 {
     background: linear-gradient(to right, #fe006e, #870a6cf1);
-    box-shadow: 1px 2px 20px #fe006e;
+    box-shadow: 1px 2px 30px #fe006e;
 }
 
 /* -------------------- */
@@ -466,9 +463,9 @@ header .nav-menu li a:hover {
     background-color: rgba(0, 0, 0, 0.8);
     color: #ff5080;
     width: 100%;
-    padding: 10px;
+    padding: 0.625rem;
     opacity: 0;
-    bottom: -40px;
+    bottom: -2.5rem;
     transition: .5s;
 }
 
@@ -519,7 +516,7 @@ header .nav-menu li a:hover {
 
 #contact input::placeholder, textarea::placeholder {
     color: rgb(0, 0, 0);
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 #contact textarea {
@@ -553,13 +550,44 @@ footer {
     background-color: #00000041;
     color: #fff;
     text-align: center;
-    padding: 30px 0;
+    padding: 1.875rem 0;
 }
 
 footer a {
     text-decoration: none;
     color: #fff;
     display: inline-flex;
-    margin: 5px;
-    font-size: 26px;
+    margin: 0.3rem;
+    font-size: 1.625rem;
     }
+
+@media screen and (max-width: 1280px) {
+
+
+    #home .desarrollador {
+        font-size: 2.625rem;
+    }
+
+    #skills .cards {
+        margin: auto 3rem;
+        grid-column-gap: 1.25rem;
+    }
+
+    #skills .cards .card-description {
+        font-size: 1rem;
+    }
+
+    #briefcase .briefcase-proyects {
+        grid-template-columns: repeat(2, 50vh);
+    }
+
+    #contact .half-input {
+        grid-template-columns: repeat(2, 50vh);
+    }
+
+    #contact 
+    #contact-description {
+    width: 100vh;
+}
+
+}

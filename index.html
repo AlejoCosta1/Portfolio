@@ -11,7 +11,12 @@
     
 </head>
 <body>
-    <section class="background">
+
+    <!-- ----- -->
+    <!-- STARS -->
+    <!-- ----- -->
+
+    <section id="background">
         <div class="stars">
             <span style="--i:55;"></span>
             <span style="--i:39;"></span>
@@ -73,198 +78,252 @@
             <span style="--i:71;"></span>
             <span style="--i:98;"></span>
             <span style="--i:31;"></span>
+            <span style="--i:91;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:75;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:65;"></span>
+            <span style="--i:43;"></span>
+            <span style="--i:29;"></span>
+            <span style="--i:50;"></span>
+            <span style="--i:86;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:40;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:56;"></span>
+            <span style="--i:97;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:94;"></span>
+            <span style="--i:34;"></span>
+            <span style="--i:73;"></span>
+            <span style="--i:81;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:61;"></span>
+            <span style="--i:78;"></span>
+            <span style="--i:90;"></span>
         </div>
     </section>
-    
+
+    <!-- ---------------------------- -->
+    <!-- HEADER - BARRA DE NAVEGACION -->
+    <!-- ---------------------------- -->
+
     <header>
-        <div class="container">
-            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="900" class="titulo">
-                <h1><a href="#">ALEJO</a></h1>
-            </div>
-            <nav data-aos="fade-down-left" data-aos-duration="1000" class="menu">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Habilidades</a></li>
-                    <li><a href="#">Proyectos</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
+        <div class="header-logo" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="900">
+            <h1><a href="#">ALEJO</a></h1>
         </div>
+        <nav class="nav-menu" data-aos="fade-down-left" data-aos-duration="1000">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Habilidades</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </nav>
     </header>
 
-    <section class="inicio" data-aos="zoom-in" data-aos-duration="1000">
+    <!-- ------------- -->
+    <!-- HOME - INICIO -->
+    <!-- ------------- -->
+
+    <section id="home" data-aos="zoom-in" data-aos-duration="1000">
         <strong id="desarrollador">Hola! Soy Desarrollador Full-Stack</strong>
         <h3 id="descripcion">Como programador full stack junior, tengo conocimientos sólidos en tecnologías clave para el desarrollo web. Me desenvuelvo con HTML, CSS y JavaScript, creando interfaces atractivas y dinámicas. Además, estoy familiarizado con lenguajes como C, C++ y Python, lo que me permite construir aplicaciones funcionales. Aunque aún estoy en las primeras etapas de mi carrera, estoy entusiasmado por aprender y crecer en el campo del desarrollo full stack. Estoy listo para asumir desafíos y seguir perfeccionando mis habilidades.</h3>
-        <button>Descargar CV</button>
-        <nav>
+        <input type="submit" value="Descargar CV" class="cv-download">
+        <nav class="contact-icons">
             <li><a href="https://github.com/AlejoCosta1" class="fa-brands fa-github" id="github"></a></li>
             <li><a href="https://twitter.com/AlejoCsta" class="fa-brands fa-twitter" id="twitter"></a></li>
             <li><a href="#" class="fa-brands fa-linkedin" id="linkedin"></a></li>
         </nav>
     </section>
 
-    <section class="orbits" data-aos="zoom-in-down" data-aos-duration="2000">
-        <div class="firt-orbits rotating">
-            <div class="html fa-brands fa-html5 html-colour" id="planets">
+    <!-- ------------------------------------ -->
+    <!-- ORBIT SKILLS - ORBITA DE HABILIDADES -->
+    <!-- ------------------------------------ -->
+
+    <section id="orbit-skills" data-aos="zoom-in" data-aos-duration="2000">
+    <div class="first-orbit rotating">
+        <div class="planets">
+            <div class="fa-brands fa-html5 html-colour planet rotar">
                 <div class="sub-orbit"></div>
                 <div class="progress rotar html-progress"><h2></h2></div>
             </div>
-            <div class="css fa-brands fa-css3-alt" id="planets">
+            <div class="fa-brands fa-css3-alt planet rotar">
                 <div class="sub-orbit"></div>
                 <div class="progress rotar css-progress"><h2></h2></div>
             </div>
-            <div class="js fa-brands fa-js" id="planets">
+            <div class="fa-brands fa-js planet rotar">
                 <div class="sub-orbit"></div>
                 <div class="progress rotar js-progress"><h2></h2></div>
             </div>
-            <div class="python fa-brands fa-python" id="planets">
+            <div class="fa-brands fa-python planet rotar">
                 <div class="sub-orbit"></div>
                 <div class="progress rotar python-progress"><h2></h2></div>
             </div>
         </div>
+    </div>
     </section>
-    
-    <!-- H A B I L I D A D E S -->
 
-    <section class="habilidades">
-        <div class="cards" data-aos="zoom-in-down" data-aos-duration="2000">
+    <!-- --------------------- -->
+    <!-- SKILLS - HABILIDADES  -->
+    <!-- --------------------- -->
+    
+    <section id="skills" data-aos="zoom-in-down" data-aos-duration="2500">
+        <div class="cards">
             <div class="card-1">
                 <div class="card-logo fa-solid fa-code"></div>
-                <div class="card-titulo">PROGRAMADOR</div>
+                <div class="card-title">PROGRAMADOR</div>
                 <hr id="line-1">
-                <div class="card-info"><h3>
-                    Soy un desarrollador con experiencia en C, C++ y Assembler. Mi especialidad incluye la creación de sitios web y aplicaciones utilizando HTML, CSS y JavaScript. Estoy comprometido en ofrecer soluciones digitales impactantes y eficientes.</h3></div>
+                <div class="card-description"><h3>Soy un desarrollador con experiencia en C, C++ y Assembler. Mi especialidad incluye la creación de sitios web y aplicaciones utilizando HTML, CSS y JavaScript. Estoy comprometido en ofrecer soluciones digitales impactantes y eficientes.</h3></div>
             </div>
             <div class="card-2">
                 <div class="card-logo fa-solid fa-palette"></div>
-                <div class="card-titulo">DISEÑADOR</div>
+                <div class="card-title">DISEÑADOR</div>
                 <hr id="line-2">
-                <div class="card-info"><h3>Soy un talentoso diseñador especializado en Photoshop, Illustrator y creación digital. Rompo las reglas y deslumbro con diseños innovadores que cautivan. ¡Estoy aquí para marcar la diferencia!</h3></div>
+                <div class="card-description"><h3>Soy un talentoso diseñador especializado en Photoshop, Illustrator y creación digital. Rompo las reglas y deslumbro con diseños innovadores que cautivan. ¡Estoy aquí para marcar la diferencia!</h3></div>
             </div>
             <div class="card-3">
                 <div class="card-logo fa-solid fa-computer"></div>
-                <div class="card-titulo">SERVICIO TECNICO</div>
+                <div class="card-title">SERVICIO TECNICO</div>
                 <hr id="line-3">
-                <div class="card-info"><h3>Soy un experto en informática, brindando soluciones rápidas y eficientes. Mi servicio técnico de calidad garantiza el funcionamiento óptimo de tu equipo, sin rodeos ni excusas. Tu satisfacción es mi prioridad absoluta.</h3></div>
+                <div class="card-description"><h3>Soy un experto en informática, brindando soluciones rápidas y eficientes. Mi servicio técnico de calidad garantiza el funcionamiento óptimo de tu equipo, sin rodeos ni excusas. Tu satisfacción es mi prioridad absoluta.</h3></div>
             </div>
         </div>
     </section>
 
-    <!-- P O R T F O L I O -->
+    <!-- -------------------- -->
+    <!-- PORTFOLIO - PROYECTS -->
+    <!-- -------------------- -->
 
-    <section id="portfolio" data-aos-duration="2000">
-        <h3 class="titulo-seccion" data-aos="zoom-in">Mis Proyectos</h3>
+    <section id="briefcase" data-aos-duration="2500">
+        <h3 class="title-seccion" data-aos="zoom-in">Mis Proyectos</h3>
         <div class="proyects-options" data-aos="zoom-in">
             <button>Programacion</button>
             <button>Todos</button>
             <button>Diseño</button>
         </div>
-        <div class="portfolio-proyects">
-            <div class="proyecto">
+        <div class="briefcase-proyects">
+            <div class="proyect">
                 <div class="overlay"></div>
                 <img data-aos="zoom-in-down" src="img/proyecto1.jpg" alt="">
                 <div class="info">
                     <h4>Descripcion Proyecto</h4>
                     <p>Diseño Web</p>
+                    <a href="#" class="fa-brands fa-github"></a>
                 </div>
             </div>
-            <div class="proyecto">
+            <div class="proyect">
                 <div class="overlay"></div>
                 <img data-aos="zoom-in-down" src="img/proyecto2.jpg" alt="">
                 <div class="info">
                     <h4>Descripcion Proyecto</h4>
                     <p>Diseño Web</p>
+                    <a href="#" class="fa-brands fa-github"></a>
                 </div>
             </div>
-            <div class="proyecto">
+            <div class="proyect">
                 <div class="overlay"></div>
                 <img data-aos="zoom-in-down" src="img/proyecto3.jpg" alt="">
                 <div class="info">
                     <h4>Descripcion Proyecto</h4>
                     <p>Diseño Web</p>
+                    <a href="#" class="fa-brands fa-github"></a>
                 </div>
             </div>
-            <div class="proyecto">
+            <div class="proyect">
                 <div class="overlay"></div>
                 <img data-aos="zoom-out-right" src="img/proyecto4.jpg" alt="">
                 <div class="info">
                     <h4>Descripcion Proyecto</h4>
                     <p>Diseño Web</p>
+                    <a href="#" class="fa-brands fa-github"></a>
                 </div>
             </div>
-            <div class="proyecto">
+            <div class="proyect">
                 <div class="overlay"></div>
                 <img data-aos="zoom-out" src="img/proyecto5.jpg" alt="">
                 <div class="info">
                     <h4>Descripcion Proyecto</h4>
                     <p>Diseño Web</p>
+                    <a href="#" class="fa-brands fa-github"></a>
                 </div>
             </div>
-            <div class="proyecto">
+            <div class="proyect">
                 <div class="overlay"></div>
                 <img data-aos="zoom-out-left" src="img/proyecto6.jpg" alt="">
                 <div class="info">
                     <h4>Descripcion Proyecto</h4>
                     <p>Diseño Web</p>
+                    <a href="#" class="fa-brands fa-github"></a>
                 </div>
             </div>
-            <div class="proyecto">
+            <div class="proyect">
                 <div class="overlay"></div>
                 <img data-aos="zoom-in-right" src="img/proyecto7.jpg" alt="">
                 <div class="info">
                     <h4>Descripcion Proyecto</h4>
                     <p>Diseño Web</p>
+                    <a href="#" class="fa-brands fa-github"></a>
                 </div>
             </div>
-            <div class="proyecto">
+            <div class="proyect">
                 <div class="overlay"></div>
                 <img data-aos="zoom-in-up" src="img/proyecto8.jpg" alt="">
                 <div class="info">
                     <h4>Descripcion Proyecto</h4>
                     <p>Diseño Web</p>
+                    <a href="#" class="fa-brands fa-github"></a>
                 </div>
             </div>
-            <div class="proyecto">
+            <div class="proyect">
                 <div class="overlay"></div>
                 <img data-aos="zoom-in-left" src="img/proyecto9.jpg" alt="">
                 <div class="info">
                     <h4>Descripcion Proyecto</h4>
                     <p>Diseño Web</p>
+                    <a href="#" class="fa-brands fa-github"></a>
                 </div>
             </div>
         </div>
     </section>
 
-      <!-- C O N T A C T O -->
+    <!-- ------------- -->
+    <!-- C O N T A C T -->
+    <!-- ------------- -->
 
-      <section id="contacto" data-aos="zoom-in" data-aos-duration="1000">
-        <h3 class="titulo-seccion">Contactame ahora</h3>
-        <div class="contenedor-form">
+    <section id="contact" data-aos="zoom-in" data-aos-duration="2500">
+        <h3 class="title-seccion">Contactame ahora</h3>
             <form action="">
-                <div class="input-mitad">
-                    <input type="text" id="contacto-nombre" placeholder="Nombre Completo *">
-                    <input type="email" id="contacto-email" placeholder="Dirección de Email *">
+                <div class="half-input">
+                    <input type="text" id="contact-name" placeholder="* Nombre Completo:">
+                    <input type="email" id="contact-email" placeholder="* Dirección de Email:">
                 </div>
-                    <input type="text" placeholder="Asunto *" class="input-full">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje *" class="input-full"></textarea>
+                    <input type="text" id="contact-affair" placeholder="* Asunto:" class="input-full">
+                    <textarea name="" id="contact-description" cols="10" rows="10" placeholder="* Tu Mensaje:" style="resize: none;" class="input-full"></textarea>
                     <input type="submit" value="Enviar Mensaje" class="btn-enviar">
             </form>
-        </div>
     </section>
 
-        <!-- F O O T E R -->
-        <footer>
-            <p>Todos los derechos reservados - 2023</p>
-            <div class="redes">
-                <a href="#"><i id="github" class="fa-brands fa-github"></i></a>
-                <a href="#"><i id="twitter" class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i id="linkedin" class="fa-brands fa-linkedin"></i></a>
-            </div>
-        </footer>
+    <!-- ----------- -->
+    <!-- F O O T E R -->
+    <!-- ----------- -->
 
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
+    <footer>
+        <p>Open Source - 2023</p>
+        <div class="redes">
+            <a href="#"><i id="github" class="fa-brands fa-github"></i></a>
+            <a href="#"><i id="twitter" class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i id="linkedin" class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <!-- -- -->
+    <!-- JS -->
+    <!-- -- -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

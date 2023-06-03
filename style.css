@@ -37,15 +37,17 @@ body {
     max-width: 100%;
 }
 
+@media screen and (min-width: 1440px) {
+
 /* ANIMACIONES */
 
 @keyframes translateY-animation {
     0% {
-        transform: translateY(230rem) scale(0);
+        transform: translateY(250rem) scale(0);
     }
     100% {
         transform: translateY(-50vh) scale(0.5);
-        transform: translateX(-10vh) scale(0.15);
+        transform: translateX(-5vh) scale(0.25);
     }
 }
 
@@ -58,13 +60,23 @@ body {
     }
 }
 
+.rotating {
+    animation: rotation 40s infinite linear;
+}
+
+.rotar{
+    animation: rotation 10s infinite linear;
+}
+
+
 /* FONDO */
-.background .stars {
+
+#background .stars {
     position: relative;
     display: flex;
 }
 
-.background .stars span {
+#background .stars span {
     width: 30px;
     height: 30px;
     background: #4fc3dc;
@@ -77,43 +89,39 @@ body {
     z-index: -1;
 }
 
-.background .stars span:nth-child(even) {
+#background .stars span:nth-child(even) {
     box-shadow: 0 0 0 10px #8b0e3944, 0 0 50px #ff2d75, 0 0 100px #4fc3dc;
     background: #ff0040;
 }
 
-.background .stars span:nth-child(5n-1) {
+#background .stars span:nth-child(5n-1) {
     box-shadow: 0 0 0 10px #ffffff44, 0 0 50px #ffffff, 0 0 100px #d9d9d9;
     background: #f5f0f1;
 }
 
 /* HEADER */
 
-.container {
-    padding: 20px 100px 50px;
-    max-width: 100%;
+header {
+    margin: 0 11vh 0 11vh;
     display: flex;
     text-align: center;
     position: relative;
     justify-content: space-between;
 }
 
-.container .titulo h1 a{
+header .header-logo h1 a{
     font-size: 54px;
     color: aqua;
-    text-decoration:solid #fff;
-    /*font-family: 'Vina Sans', cursive;*/
+    text-decoration: solid #fff;
     transition: all .5s ease-out;
 }
 
-.container .titulo h1:hover{
+header .header-logo h1:hover{
     transform: scale(1.05);
-    /* text-shadow: 1px 1px 50px rgb(0, 225, 255); */
     text-shadow: 10px 8px rgb(0, 0, 0), -10px 12px rgb(255, 255, 255), -8px -12px rgb(253, 253, 253), 12px -5px rgb(14, 178, 200);
-    /* text-shadow: 0 0 20px #fefcc9, 2px -2px 3px #feec85, -4px -4px 5px #ffae34, 5px -10px 6px #ec760c, -5px -12px 8px #cd4606, 0 -15px 20px #973716, 2px -15px 20px #451b0e; */
 }
 
-.container .menu li {
+header .nav-menu li {
     padding: 10px;
     margin: 10px;
     font-size: 22px;
@@ -121,7 +129,7 @@ body {
     width: 120px;
 }
 
-.container .menu li a {
+header .nav-menu li a {
     display: flex;
     width: 150px;
     color: #ffffff;
@@ -131,33 +139,35 @@ body {
     transition: all .3s ease-out;
 }
 
-.container .menu li a:hover {
-    display: flex;
+header .nav-menu li a:hover {
     background: #fff;
     color: #000;
-    /* text-decoration: underline #ff7b00 solid 2px; */
 }
 
-/* INICIO */
-.inicio {
+
+/* ------------- */
+/* HOME - INICIO */
+/* ------------- */
+
+#home {
     height: 700px;
     position: relative;
     text-align: left;
     margin: 150px 0 0 100px;
 }
 
-.inicio #desarrollador {
+#home #desarrollador {
     font-size: 62px;
     color: #fff;
 }
 
-.inicio #descripcion {
+#home #descripcion {
     margin-top: 15px;
     width: 70%;
     color: #d6d6d6;
 }
 
-.inicio button {
+#home .cv-download {
     background: linear-gradient(to right, #f04e03, #db7500);
     color: #fff;
     font-size: 12px;
@@ -166,29 +176,24 @@ body {
     height: 50px;
     border-radius: 20px;
     transition: all .3s ease-in;
-    animation: botton-opacity 2s ease-out;
 }
 
-.inicio button:hover {
+#home .cv-download:hover {
     transform: scale(1.05);
     box-shadow: 1px 1px 20px #ff7300;
 }
 
-.inicio nav {
+.contact-icons {
     position: absolute;
     display: flex;
     margin-top: 30px;
     font-size: 30px;
 }
 
-.inicio nav li a{
+#home nav li a{
     color: #fff;
     padding: 10px;
     transition: all .3s ease-in;
-}
-
-.inicio nav li a:hover {
-    transform: scale(1.2);   
 }
 
 #github:hover {
@@ -206,83 +211,75 @@ body {
     text-shadow: 1px 1px 20px #0112ff;
 }
 
-/* ORBITS */
+/* ------------------------------------ */
+/* SKILLS ORBIT - ORBITA DE HABILIDADES */
+/* ------------------------------------ */
 
-.orbits {
+#orbit-skills {
     display: flex;
-    position: relative;
-    justify-content: space-around;
-    margin-top: 20px;
-    margin-bottom: 375px;
-}
-
-.firt-orbits {
-    position: absolute;
-    width: 700px;
-    height: 700px;
-    border: dashed 6px;
-    color: white;
-    border-radius: 50%;
-    z-index: 5;
-}
-
-#planets {
-    align-items: center;
     justify-content: center;
-    display: flex;
-    font-size: 49px;
-    width: 123px;
-    height: 123px;
+    color: #fff;
+}
+
+#orbit-skills .first-orbit {
+    position: absolute;
+    width: 55rem;
+    height: 55rem;
+    border: dashed 0.5em;
     border-radius: 50%;
-    margin: auto;
+}
+
+#orbit-skills .planets {
+    display: flex;
+    justify-content: center;
+}
+
+#orbit-skills .planet {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    font-size: 3rem;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
 }
 
 
-.html {
+.fa-html5 {
     background: linear-gradient(to right, #E54C21, #ff6c28);
-    left: 41%;
-    top: -60px;
+    margin-top: 52rem;
 }
 
-.css {
+.fa-css3-alt {
     background: linear-gradient(to right, #2465f1, #3f66f4);
-    left: 41%;
-    top: 630px;
+    margin-top: 23rem;
+    margin-left: 56rem;
 }
 
-.js {
+.fa-js {
     background: linear-gradient(to right, #F7DF1E, #d5bd07);
-    left: 65vh;
-    top: 40%;
+    margin-right: 56rem;
+    margin-top: 23rem;
 }
 
-.python {
-    background: linear-gradient(to right, #F7DF1E, #d5bd07);
-    left: -65px;
-    top: 40%;
-}
-
-.rotating {
-    animation: rotation 40s infinite linear;
-}
-
-.rotar{
-    animation: rotation 10s infinite linear;
+.fa-python {
+    background: linear-gradient(to right, #a6ff00, #eeff00);
+    margin-top: -3rem;
 }
 
 .sub-orbit {
     position: absolute;
-    width: 143px;
-    height: 143px;
+    width: 9rem;
+    height: 9rem;
     border-radius: 50%;
     border: solid 20px #ffffff1e;
-    z-index: -1;
 }
 
 .progress{
     position: absolute;
-    width: 143px;
-    height: 143px;
+    width: 9rem;
+    height: 9rem;
     border-radius: 50%;
     margin: 0 auto;
 }
@@ -303,21 +300,20 @@ body {
 }
 
 .python-progress {
-    border: solid 20px #F7DF1E;
+    border: solid 20px #a6ff00;
     clip-path: circle(100px at 0px 0px);
 }
 
 
 /* HABILIDADES */
 
-.habilidades {
-    margin: 0 380px;
-    position: relative;
+#skills {
+    margin: 200px 380px;
+    display: flex;
     text-align: center;
-    bottom: 298px;
 }
 
-.habilidades .cards {
+#skills .cards {
     width: 100%;
     height: 550px;
     grid-template-columns: repeat(3, 1fr);
@@ -326,22 +322,22 @@ body {
     justify-content: space-around;
 }
 
-.habilidades .card-1,
-.habilidades .card-2,
-.habilidades .card-3 {
+#skills .card-1,
+#skills .card-2,
+#skills .card-3 {
     border-radius: 35px;
     box-shadow: 1px 2px 10px black;
     background: #fff;
     transition: all .3s;
 }
 
-.habilidades .card-1:hover,
-.habilidades .card-2:hover,
-.habilidades .card-3:hover {
+#skills .card-1:hover,
+#skills .card-2:hover,
+#skills .card-3:hover {
     transform: scale(1.02);
 }
 
-.habilidades .card-logo {
+#skills .card-logo {
     padding: 60px;
     width: 5px;
     height: 5px;
@@ -354,13 +350,13 @@ body {
     margin: 20px auto;
 }
 
-.habilidades .card-titulo {
+#skills .card-title {
     padding: 5px 0 0 0;
     font-size: 22px;
     letter-spacing: 2px;
 }
 
-.habilidades .cards hr {
+#skills .cards hr {
     height: 8px;
     width: 50%;
     border-radius: 50px;
@@ -369,101 +365,98 @@ body {
     margin-bottom: 25px;
 }
 
-.habilidades .cards .card-info {
+#skills .cards .card-description {
     padding: 0 20px 0 20px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.habilidades .card-1 .card-logo,
+#skills .card-1 .card-logo,
 #line-1 {
     background: linear-gradient(to right, #02d8f8, #0048ff);
     box-shadow: 1px 2px 20px #0048ff;
 }
 
-.habilidades .card-2 .card-logo,
+#skills .card-2 .card-logo,
 #line-2 {
     background: linear-gradient(to right, #ff7700, #e2ee02);
     box-shadow: 1px 2px 20px #ff7700;
 }
 
-.habilidades .card-3 .card-logo,
+#skills .card-3 .card-logo,
 #line-3 {
     background: linear-gradient(to right, #fe006e, #870a6cf1);
     box-shadow: 1px 2px 20px #fe006e;
 }
 
-/* PROYECTS */
+/* -------------------- */
+/* PROYECTS - PROYECTOS */
+/* -------------------- */
 
-#portfolio {
-    max-width: 1100px;
-    margin: auto;
+#briefcase {
+    max-width: 140vh;
+    margin: 40vh auto;
+    display: grid;
+    justify-content: center;
 }
 
-.titulo-seccion {
+.title-seccion {
     text-align: center;
-    font-size: 52px;
+    font-size: 3.25rem;
     color: #fff;
 }
 
-#portfolio .proyects-options{
+#briefcase .proyects-options{
     display: flex;
     justify-content: center;
     margin-top: 2.5rem;
-    margin-left: 35px;
-    font-size: 22px;
+    font-size: 1.25rem;
 }
 
-#portfolio .proyects-options button {
+#briefcase .proyects-options button {
     background: none;
     border: #000000c5 1px solid;
     color: #fff;
     width: 9.60rem;
     height: 3.12rem;
     margin-right: 3rem;
-    border-radius: 35px;
+    border-radius: 2.18rem;
     transition: all .3s ease-in;
+    margin-bottom: 2rem;
 }
 
-#portfolio .proyects-options button:hover {
+#briefcase .proyects-options button:hover {
     background: #000;
 }
 
-#portfolio .fila {
-    display: flex;
-    justify-content: space-between;
-    margin: 30px 0;
-}
-
-#portfolio .portfolio-proyects {
-    margin: 20px 0;
+#briefcase .briefcase-proyects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 20px;
+    grid-column-gap: 1rem;
 }
 
-#portfolio .proyecto {
+#briefcase .proyect {
     display: flex;
-    max-width: 450px;
-    margin: 10px 10px;
+    max-width: 28.12rem;
+    margin: 0.62rem 0.62rem;
     position: relative;
     overflow: hidden;
     border-radius: 15px;
 }
 
-#portfolio .proyecto img {
+#briefcase .proyect img {
     width: 100%;
     height: 100%;
     filter: grayscale(0.8);
     transition: .5s;
 }
 
-#portfolio .proyecto:hover img {
+#briefcase .proyect:hover img {
     filter: grayscale(0);
     transform: scale(1.02);
 }
 
-#portfolio .proyecto .info {
+#briefcase .proyect .info {
     position: absolute;
     left: 0px;
     background-color: rgba(0, 0, 0, 0.8);
@@ -475,66 +468,72 @@ body {
     transition: .5s;
 }
 
-#portfolio .proyecto:hover .info {
+#briefcase .proyect:hover .info {
     opacity: 1;
     bottom: 0;
 }
 
+#briefcase .proyect .info a {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
 /* CONTACTO */
 
-#contacto {
-    padding: 50px;
-    margin-top: 50px;
+#contact {
+    margin-top: -15vh;
+    margin-bottom: 30vh;
 }
 
-#contacto .titulo-seccion {
-    margin-bottom: 30px;
-}
-
-#contacto .contenedor-form {
-    max-width: 60%;
-    margin: auto;
-}
-
-#contacto .contenedor-form .input-mitad {
-    margin-bottom: 10px;
+#contact form {
+    margin-top: 5vh;
     display: grid;
-    grid-template-columns: repeat(2, 52%);
+    justify-content: center;
 }
 
-#contacto .contenedor-form .input-mitad #contacto-nombre {
-    margin-right: 10px;
+#contact 
+#contact-description {
+    width: 135vh;
 }
 
-#contacto .contenedor-form .input-mitad #contacto-email {
-    margin-left: 10px;
+#contact .half-input {
+    margin-bottom: 0.62rem;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 67.5vh);
 }
 
-#contacto .contenedor-form input,
-#contacto .contenedor-form textarea {
-    padding: 20px;
-    border-radius: 20px;
-    border: none;
-    border: 1px solid #919191;
+#contact .input-full {
+    margin-bottom: 0.625rem;
 }
 
-#contacto .contenedor-form .input-full {
-    margin-bottom: 10px;
-    width: 100%;
+#contact input,
+#contact textarea {
+    padding: 1.25rem;
+    border-radius: 1.25rem;
 }
 
-#contacto .btn-enviar {
+#contact input::placeholder, textarea::placeholder {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+
+#contact textarea {
+    height: 40vh;
+}
+
+#contact .btn-enviar {
     text-align: center;
-    width: 150px;
-    height: 50px;
+    width: 15rem;
+    height: 3.12rem;
     display: block;
     margin: auto;
     cursor: pointer;
     transition: .5s;
-    padding: 10px 15px !important;
+    padding: 0.625rem 1rem !important;
 }
 
-#contacto .btn-enviar:hover {
+#contact .btn-enviar:hover {
     background-color: #424242;
     color: #fff;
 }
@@ -545,6 +544,7 @@ body {
 /* ------------------- */
 
 footer {
+    display: block;
     background-color: #00000041;
     color: #fff;
     text-align: center;
@@ -554,12 +554,12 @@ footer {
 footer a {
     text-decoration: none;
     color: #fff;
-    display: inline-block;
+    display: inline-flex;
     margin: 5px;
     font-size: 26px;
+    }
 }
 
-
-@media screen and (max-width: 1280px) and (min-width: 768px) {
-
+@media screen and (max-width: 1339px)  and (min-width: 786px){
+    
 }

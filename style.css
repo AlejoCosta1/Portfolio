@@ -37,9 +37,9 @@ body {
     max-width: 100%;
 }
 
-@media screen and (min-width: 1440px) {
-
+/* ----------- */
 /* ANIMACIONES */
+/* ----------- */
 
 @keyframes translateY-animation {
     0% {
@@ -68,8 +68,9 @@ body {
     animation: rotation 10s infinite linear;
 }
 
-
-/* FONDO */
+/* ------------------ */
+/* BACKGROUND - FONDO */
+/* ------------------ */
 
 #background .stars {
     position: relative;
@@ -99,7 +100,9 @@ body {
     background: #f5f0f1;
 }
 
-/* HEADER */
+/* ----------------------- */
+/* HEADER - BARRA SUPERIOR */
+/* ----------------------- */
 
 header {
     margin: 0 11vh 0 11vh;
@@ -558,7 +561,6 @@ footer a {
     margin: 5px;
     font-size: 26px;
     }
-}
 
 @media screen and (max-width: 1339px)  and (min-width: 786px){
     

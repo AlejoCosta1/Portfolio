@@ -433,7 +433,8 @@ header .nav-menu li a:hover {
 #briefcase .briefcase-proyects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 1rem;
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
 }
 
 #briefcase .proyect {
@@ -561,7 +562,22 @@ footer a {
     font-size: 1.625rem;
     }
 
-@media screen and (max-width: 1640px) {
+@media screen and (max-width: 1600px) {
+
+    /* ------------------------ */
+    /* ANIMATIONS - ANIMACIONES */
+    /* ------------------------ */    
+
+    @keyframes translateY-animation {
+        0% {
+            transform: translateY(235rem) scale(0);
+        }
+        100% {
+            transform: translateY(-50vh) scale(0.5);
+            transform: translateX(-5vh) scale(0.25);
+        }
+    }
+
 
     /* ------------------------------------ */
     /* SKILLS ORBIT - ORBITA DE HABILIDADES */
@@ -613,13 +629,70 @@ footer a {
     /* SKILLS - HABILIDADES */
     /* -------------------- */
 
+    #skills .cards {
+        margin-top: 3rem;
+        width: 70%;
+        height: 30rem;
+    }
+
     #skills .cards .card-description {
         width: 95%;
     }
 
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1366px) {
+
+    /* ------------------------ */
+    /* ANIMATIONS - ANIMACIONES */
+    /* ------------------------ */    
+
+    @keyframes translateY-animation {
+        0% {
+            transform: translateY(208rem) scale(0);
+        }
+        100% {
+            transform: translateY(-50vh) scale(0.5);
+            transform: translateX(-5vh) scale(0.25);
+        }
+    }
+
+    /* ----------------------- */
+    /* HEADER - BARRA SUPERIOR */
+    /* ----------------------- */
+
+    header .header-logo h1 a{
+        font-size: 3rem;
+    }
+
+    header .nav-menu li {
+        font-size: 1.25rem;
+        width: 6.5rem;
+    }
+
+    header .nav-menu li a {
+        width: 8.5rem;
+    }
+
+    /* ------------- */
+    /* HOME - INICIO */
+    /* ------------- */
+
+    #home {
+        margin: 7.375rem 0 0 5.2rem;
+    }
+
+    #home .desarrollador {
+        font-size: 2.575rem;
+    }
+
+    #home .description {
+        font-size: 1rem;
+    }
+
+    .contact-icons {
+        font-size: 1.5rem;
+    }
 
     /* ------------------------------------ */
     /* SKILLS ORBIT - ORBITA DE HABILIDADES */
@@ -627,8 +700,124 @@ footer a {
 
 
     #orbit-skills .first-orbit {
-        width: 44rem;
-        height: 44rem;
+        margin-top: -10rem;
+        width: 38.5rem;
+        height: 38.5rem;
+    }
+
+    #orbit-skills .planet {
+        font-size: 2rem;
+        width: 5.25rem;
+        height: 5.25rem;
+    }
+
+
+    .fa-html5 {
+        margin-top: 36.4rem;
+    }
+
+    .fa-css3-alt {
+        margin-top: 16.1rem;
+        margin-left: 39.2rem;
+    }
+
+    .fa-js {
+        margin-right: 39.2rem;
+        margin-top: 16.1rem;
+    }
+
+    .fa-python {
+        margin-top: -2.1rem;
+    }
+
+    .sub-orbit {
+        width: 6.3rem;
+        height: 6.3rem;
+    }
+
+    .progress{
+        width: 6.3rem;
+        height: 6.3rem;
+    }
+
+    /* -------------------- */
+    /* SKILLS - HABILIDADES */
+    /* -------------------- */
+
+    #skills {
+        margin-top: -40rem;
+    }
+    
+    #skills .cards {
+        width: 65%;
+        height: 25rem;
+    }
+
+    #skills .card-logo {
+        padding: 3.5rem;
+    }
+    
+    #skills .card-title {
+        padding: 5px 0 0 0;
+        font-size: 1.25rem;
+        letter-spacing: 2px;
+    }
+    
+    #skills .cards hr {
+        margin-bottom: 1rem;
+    }
+
+    #skills .cards .card-description {
+        font-size: 0.75rem;
+    }
+    
+    #briefcase {
+        max-width: 132vh;
+        margin: 45vh auto;
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
+
+    /* ------------------------ */
+    /* ANIMATIONS - ANIMACIONES */
+    /* ------------------------ */    
+
+    @keyframes translateY-animation {
+        0% {
+            transform: translateY(233rem) scale(0);
+        }
+        100% {
+            transform: translateY(-50vh) scale(0.5);
+            transform: translateX(-5vh) scale(0.25);
+        }
+    }
+
+    /* ------------- */
+    /* HOME - INICIO */
+    /* ------------- */
+
+    #home {
+        margin: 8.375rem 0 0 5.2rem;
+    }
+
+    #home .desarrollador {
+        font-size: 2.875rem;
+    }
+
+    #home .description {
+        font-size: 1.15rem;
+    }
+
+    /* ------------------------------------ */
+    /* SKILLS ORBIT - ORBITA DE HABILIDADES */
+    /* ------------------------------------ */
+
+
+    #orbit-skills .first-orbit {
+        width: 38.5rem;
+        height: 38.5rem;
     }
 
     #orbit-skills .planet {
@@ -639,17 +828,17 @@ footer a {
 
 
     .fa-html5 {
-        margin-top: 41.6rem;
+        margin-top: 36.4rem;
     }
 
     .fa-css3-alt {
-        margin-top: 18.4rem;
-        margin-left: 44.8rem;
+        margin-top: 16.1rem;
+        margin-left: 39.2rem;
     }
 
     .fa-js {
-        margin-right: 44.8rem;
-        margin-top: 18.4rem;
+        margin-right: 39.2rem;
+        margin-top: 16.1rem;
     }
 
     .fa-python {
@@ -694,8 +883,22 @@ footer a {
     }
     
     #briefcase {
-        max-width: 132vh;
-        margin: 40vh auto;
+        max-width: 118vh;
+        margin: 45vh auto;
+    }
+
+    #contact {
+        margin-top: -15vh;
+        margin-bottom: 30vh;
+    }
+
+    #contact 
+    #contact-description {
+        width: 110vh;
+    }
+
+    #contact .half-input {
+        grid-template-columns: repeat(2, 56vh);
     }
 
 }

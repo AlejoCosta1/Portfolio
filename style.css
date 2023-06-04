@@ -40,7 +40,7 @@ body {
 
 @keyframes translateY-animation {
     0% {
-        transform: translateY(250rem) scale(0);
+        transform: translateY(240rem) scale(0);
     }
     100% {
         transform: translateY(-50vh) scale(0.5);
@@ -318,10 +318,10 @@ header .nav-menu li a:hover {
     display: grid;
     justify-content: space-around;
     margin: auto;
-    width: 130vh;
+    width: 60%;
     height: 34rem;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 3.125rem;
+    grid-column-gap: 3rem;
 }
 
 #skills .card-1,
@@ -396,7 +396,7 @@ header .nav-menu li a:hover {
 /* -------------------- */
 
 #briefcase {
-    max-width: 132vh;
+    max-width: 100%;
     margin: 40vh auto;
     display: grid;
     justify-content: center;
@@ -487,7 +487,7 @@ header .nav-menu li a:hover {
 
 #contact {
     margin-top: -15vh;
-    margin-bottom: 30vh;
+    margin-bottom: 10vh;
 }
 
 #contact form {
@@ -528,11 +528,11 @@ header .nav-menu li a:hover {
 }
 
 #contact .btn-enviar {
-    text-align: center;
-    margin-top: 15vh;
+    display: flex;
+    margin-top: 30rem;
+    justify-content: center;
     width: 15rem;
     height: 3.12rem;
-    display: block;
     margin: auto;
     cursor: pointer;
     transition: .5s;

@@ -1588,3 +1588,148 @@ footer a {
     }
 
 }
+
+@media screen and (max-width: 490px) {
+
+    /* ----------------------- */
+    /* HEADER - BARRA SUPERIOR */
+    /* ----------------------- */
+    header {
+        margin: 0 1rem;
+    }
+
+    header .nav-menu {
+        display: none;
+    }
+
+    /* ------------- */
+    /* HOME - INICIO */
+    /* ------------- */
+
+    #home {
+        margin: 5.5rem 0 0 1rem;
+    }
+
+    #home .desarrollador {
+        font-size: 1.2rem;
+    }
+
+    #home .description {
+        font-size: 0.7rem;
+        width: 90%;
+    }
+
+    #home .cv-download {
+        font-size: 0.7rem;
+        width: 8rem;
+        height: 2.5rem;
+    }
+
+    #home .contact-icons {
+        margin-top: 1rem;
+    }
+
+    /* ------------------------------------ */
+    /* SKILLS ORBIT - ORBITA DE HABILIDADES */
+    /* ------------------------------------ */
+
+    #orbit-skills {
+        display: none;
+    }
+
+    /* -------------------- */
+    /* SKILLS - HABILIDADES */
+    /* -------------------- */
+
+    #skills {
+        margin-top: -10rem;
+    }
+    
+    #skills .cards {
+        width: 75%;
+        grid-template-columns: repeat(1, 2fr);
+    }
+
+    #skills .card-logo {
+        padding: 3.5rem;
+    }
+    
+    #skills .card-title {
+        font-size: 1.25rem;
+        letter-spacing: 2px;
+    }
+    
+    #skills .cards hr {
+        margin-bottom: 1rem;
+    }
+
+    #skills .cards .card-description {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 0.8rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    /* --------------------- */
+    /* BRIEFCASE - PORTFOLIO */
+    /* --------------------- */
+
+    #briefcase {
+        width: 90%;
+        margin: 80rem auto 0 auto;
+    }
+
+    .title-seccion {
+        font-size: 1.8rem;
+    }
+
+    #briefcase .briefcase-proyects {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0.5rem;
+        grid-row-gap: 0.5rem;
+    }
+
+    /* -------------------- */
+    /* CONTACT - CONTACTAME */
+    /* -------------------- */
+
+    #contact {
+        margin-bottom: 5vh;
+        margin-top: 7rem;
+    }
+
+    #contact 
+    #contact-description {
+        width: 30vh;
+    }
+
+    #contact .half-input {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0.62rem;
+    }
+
+    #contact input,
+    #contact textarea {
+    padding: 0.9rem;
+    border-radius: 1.25rem;
+}
+
+    #contact input::placeholder, textarea::placeholder {
+        font-size: 0.7rem;
+    }
+
+    #contact textarea {
+        height: 30vh;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+
+    footer a {
+        font-size: 1.3rem;
+    }
+
+}

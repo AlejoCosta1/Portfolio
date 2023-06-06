@@ -1696,13 +1696,13 @@ footer a {
     /* CONTACT - CONTACTAME */
 
     #contact {
-        margin-top: 40rem;
+        margin-top: 50rem;
         height: 38rem;
     }
 
     #contact 
     #contact-description {
-        width: 40vh;
+        width: 35vh;
     }
 
     #contact .half-input {

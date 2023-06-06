@@ -1563,13 +1563,11 @@ footer a {
     /* CONTACT - CONTACTAME */
 
     #contact {
-        margin-top: 35rem;
+        margin-top: 55rem;
     }
 
     #contact 
     #contact-description {
-        width: 45vh;
-        height: 45vh;
     }
 
     #contact .btn-enviar {
@@ -1696,13 +1694,12 @@ footer a {
     /* CONTACT - CONTACTAME */
 
     #contact {
-        margin-top: 50rem;
-        height: 38rem;
+        margin-top: 35rem;
     }
 
     #contact 
     #contact-description {
-        width: 35vh;
+        padding: 1rem 0;
     }
 
     #contact .half-input {
@@ -1721,7 +1718,7 @@ footer a {
     }
 
     #contact textarea {
-        height: 40vh;
+        height: 30vh;
     }
 
     footer {

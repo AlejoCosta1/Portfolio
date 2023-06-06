@@ -1564,7 +1564,7 @@ footer a {
     /* CONTACT - CONTACTAME */
 
     #contact {
-        margin: auto;
+        margin: -15rem auto 5rem;
     }
 
     #contact .half-input {

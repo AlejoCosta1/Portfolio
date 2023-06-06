@@ -397,7 +397,7 @@ header .nav-menu li a:hover {
 
 #briefcase {
     max-width: 100%;
-    margin: 40vh auto 20vh;
+    margin: 40vh auto;
     display: grid;
     justify-content: center;
 }
@@ -464,7 +464,8 @@ header .nav-menu li a:hover {
 /* ------------------ */
 
 #contact {
-    height: 56.25rem;
+    margin-top: -15vh;
+    margin-bottom: 10vh;
     width: 100%;
 }
 
@@ -548,7 +549,24 @@ footer a {
 
 @media screen and (max-width: 1600px) {
 
+    /* ------------------------ */
+    /* ANIMATIONS - ANIMACIONES */
+    /* ------------------------ */    
+
+    @keyframes translateY-animation {
+        0% {
+            transform: translateY(235rem) scale(0);
+        }
+        100% {
+            transform: translateY(-50vh) scale(0.5);
+            transform: translateX(-5vh) scale(0.25);
+        }
+    }
+
+
+    /* ------------------------------------ */
     /* SKILLS ORBIT - ORBITA DE HABILIDADES */
+    /* ------------------------------------ */
 
 
     #orbit-skills .first-orbit {
@@ -592,7 +610,9 @@ footer a {
         height: 8.1rem;
     }
 
+    /* -------------------- */
     /* SKILLS - HABILIDADES */
+    /* -------------------- */
 
     #skills .cards {
         margin-top: 3rem;
@@ -608,7 +628,23 @@ footer a {
 
 @media screen and (max-width: 1366px) {
 
+    /* ------------------------ */
+    /* ANIMATIONS - ANIMACIONES */
+    /* ------------------------ */    
+
+    @keyframes translateY-animation {
+        0% {
+            transform: translateY(202rem) scale(0);
+        }
+        100% {
+            transform: translateY(-50vh) scale(0.5);
+            transform: translateX(-5vh) scale(0.25);
+        }
+    }
+
+    /* ----------------------- */
     /* HEADER - BARRA SUPERIOR */
+    /* ----------------------- */
 
     header .header-logo h1 a{
         font-size: 3rem;
@@ -623,7 +659,9 @@ footer a {
         width: 8.5rem;
     }
 
+    /* ------------- */
     /* HOME - INICIO */
+    /* ------------- */
 
     #home {
         margin: 7.375rem 0 0 5.2rem;
@@ -641,7 +679,9 @@ footer a {
         font-size: 1.5rem;
     }
 
+    /* ------------------------------------ */
     /* SKILLS ORBIT - ORBITA DE HABILIDADES */
+    /* ------------------------------------ */
 
 
     #orbit-skills .first-orbit {
@@ -685,7 +725,9 @@ footer a {
         height: 6.3rem;
     }
 
+    /* -------------------- */
     /* SKILLS - HABILIDADES */
+    /* -------------------- */
 
     #skills {
         margin-top: -34.5rem;
@@ -714,18 +756,22 @@ footer a {
         font-size: 0.75rem;
     }
 
+    /* --------------------- */
     /* BRIEFCASE - PORTFOLIO */
+    /* --------------------- */
     
     #briefcase {
         max-width: 132vh;
         margin: 45vh auto;
     }
 
+    /* -------------------- */
     /* CONTACT - CONTACTAME */
+    /* -------------------- */
 
     #contact {
         margin-top: -15vh;
-        height: 800px;
+        margin-bottom: 30vh;
     }
 
     #contact 
@@ -741,7 +787,23 @@ footer a {
 
 @media screen and (max-width: 1280px) {
 
+    /* ------------------------ */
+    /* ANIMATIONS - ANIMACIONES */
+    /* ------------------------ */    
+
+    @keyframes translateY-animation {
+        0% {
+            transform: translateY(190rem) scale(0);
+        }
+        100% {
+            transform: translateY(-50vh) scale(0.5);
+            transform: translateX(-5vh) scale(0.25);
+        }
+    }
+
+    /* ------------- */
     /* HOME - INICIO */
+    /* ------------- */
 
     #home {
         margin: 4.5rem 0 0 4.2rem;
@@ -760,7 +822,9 @@ footer a {
         height: 2.652rem;
     }
 
+    /* ------------------------------------ */
     /* SKILLS ORBIT - ORBITA DE HABILIDADES */
+    /* ------------------------------------ */
 
 
     #orbit-skills .first-orbit {
@@ -821,7 +885,9 @@ footer a {
         border: solid 15px #a6ff00;
     }
 
+    /* -------------------- */
     /* SKILLS - HABILIDADES */
+    /* -------------------- */
 
     #skills {
         margin-top: -35rem;
@@ -849,8 +915,9 @@ footer a {
         font-size: 0.75rem;
     }
     
-
+    /* --------------------- */
     /* BRIEFCASE - PORTFOLIO */
+    /* --------------------- */
 
     #briefcase {
         width: 120vh;
@@ -866,7 +933,9 @@ footer a {
         height: 2.652rem;
     }
 
+    /* -------------------- */
     /* CONTACT - CONTACTAME */
+    /* -------------------- */
 
     #contact {
         margin-top: -15rem;
@@ -886,23 +955,37 @@ footer a {
 
 @media screen and (max-width: 1152px) {
 
+    /* ------------------------ */
+    /* ANIMATIONS - ANIMACIONES */
+    /* ------------------------ */    
 
+    @keyframes translateY-animation {
+        0% {
+            transform: translateY(200rem) scale(0);
+        }
+        100% {
+            transform: translateY(-50vh) scale(0.5);
+            transform: translateX(-5vh) scale(0.25);
+        }
+    }
+
+    /* ----------------------- */
     /* HEADER - BARRA SUPERIOR */
-
+    /* ----------------------- */
     header .nav-menu {
         display: none;
     }   
 
+    /* ------------- */
     /* HOME - INICIO */
+    /* ------------- */
 
     #home {
-        margin: 8.5rem 0 0 2rem;
-        height: 50rem;
+        margin: 8.5rem 0 0 4.2rem;
     }
 
     #home .desarrollador {
         font-size: 3rem;
-        margin: 
     }
 
     #home .description {
@@ -914,33 +997,36 @@ footer a {
         height: 2.652rem;
     }
 
+    /* ------------------------------------ */
     /* SKILLS ORBIT - ORBITA DE HABILIDADES */
+    /* ------------------------------------ */
 
 
     #orbit-skills .first-orbit {
-        width: 30rem;
-        height: 30rem;
+        margin-top: -10rem;
+        width: 35.85rem;
+        height: 35.85rem;
         border: dashed 0.3rem;
     }
 
     #orbit-skills .planet {
         font-size: 1.5rem;
-        width: 4rem;
-        height: 4rem;
+        width: 3.5rem;
+        height: 3.5rem;
     }
 
 
     .fa-html5 {
-        margin-top: 28rem;
+        margin-top: 33.8rem;
     }
 
     .fa-css3-alt {
         margin-top: 14.95rem;
-        margin-left: 30rem;
+        margin-left: 36.4rem;
     }
 
     .fa-js {
-        margin-right: 30rem;
+        margin-right: 36.4rem;
         margin-top: 14.95rem;
     }
 
@@ -949,14 +1035,14 @@ footer a {
     }
 
     .sub-orbit {
-        width: 5rem;
-        height: 5rem;
+        width: 4.5rem;
+        height: 4.5rem;
         border: solid 10px #ffffff1e;
     }
 
     .progress{
-        width: 5rem;
-        height: 5rem;
+        width: 4.5rem;
+        height: 4.5rem;
     }
 
     .html-progress {
@@ -975,10 +1061,12 @@ footer a {
         border: solid 10px #a6ff00;
     }
 
+    /* -------------------- */
     /* SKILLS - HABILIDADES */
+    /* -------------------- */
 
     #skills {
-        margin-top: -30.5rem;
+        margin-top: -34rem;
     }
     
     #skills .cards {
@@ -1004,11 +1092,12 @@ footer a {
         margin-top: 1rem;
     }
     
+    /* --------------------- */
     /* BRIEFCASE - PORTFOLIO */
+    /* --------------------- */
 
     #briefcase {
-        width: 70%;
-        height: 750px;
+        width: 90%;
     }
 
     .title-seccion {
@@ -1019,20 +1108,22 @@ footer a {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /* -------------------- */
     /* CONTACT - CONTACTAME */
+    /* -------------------- */
 
     #contact {
+        margin-top: -15vh;
         margin-bottom: 30vh;
-        height: 37.5rem;
     }
 
     #contact 
     #contact-description {
-        width: 80vh;
+        width: 100vh;
     }
 
     #contact .half-input {
-        grid-template-columns: repeat(2, 41vh);
+        grid-template-columns: repeat(2, 51vh);
     }
 
     footer {
@@ -1047,11 +1138,26 @@ footer a {
 
 @media screen and (max-width: 1024px) {
 
+    /* ------------------------ */
+    /* ANIMATIONS - ANIMACIONES */
+    /* ------------------------ */    
+
+    @keyframes translateY-animation {
+        0% {
+            transform: translateY(197rem) scale(0);
+        }
+        100% {
+            transform: translateY(-50vh) scale(0.5);
+            transform: translateX(0vh) scale(0.25);
+        }
+    }
+
+    /* ------------- */
     /* HOME - INICIO */
+    /* ------------- */
 
     #home {
         margin: 5.5rem 0 0 4.2rem;
-        height: 50rem;
     }
 
     #home .desarrollador {
@@ -1067,11 +1173,15 @@ footer a {
         height: 2.652rem;
     }
 
+    /* ------------------------------------ */
     /* SKILLS ORBIT - ORBITA DE HABILIDADES */
+    /* ------------------------------------ */
+
 
     #orbit-skills .first-orbit {
-        width: 28rem;
-        height: 28rem;
+        margin-top: -5rem;
+        width: 30.25rem;
+        height: 30.25rem;
     }
 
     #orbit-skills .first-orbit {
@@ -1085,17 +1195,18 @@ footer a {
         height: 3.5rem;
     }
 
+
     .fa-html5 {
-        margin-top: 26.5rem;
+        margin-top: 28rem;
     }
 
     .fa-css3-alt {
         margin-top: 13.8rem;
-        margin-left: 27.8rem;
+        margin-left: 30.4rem;
     }
 
     .fa-js {
-        margin-right: 27.8rem;
+        margin-right: 30.4rem;
         margin-top: 13.8rem;
     }
 
@@ -1130,14 +1241,16 @@ footer a {
         border: solid 10px #a6ff00;
     }
 
+    /* -------------------- */
     /* SKILLS - HABILIDADES */
+    /* -------------------- */
 
     #skills {
-        margin-top: -28rem;
+        margin-top: -29.5rem;
     }
     
     #skills .cards {
-        width: 75%;
+        width: 85%;
         height: 22rem;
         gap: 1rem;
     }
@@ -1147,7 +1260,7 @@ footer a {
     }
     
     #skills .card-title {
-        font-size: 0.9rem;
+        font-size: 1rem;
         letter-spacing: 2px;
     }
     
@@ -1156,11 +1269,13 @@ footer a {
     }
 
     #skills .cards .card-description {
-        font-size: 0.6rem;
+        font-size: 0.65rem;
         margin-top: 1rem;
     }
     
+    /* --------------------- */
     /* BRIEFCASE - PORTFOLIO */
+    /* --------------------- */
 
     #briefcase {
         width: 80vh;
@@ -1175,23 +1290,23 @@ footer a {
         grid-template-columns: repeat(2, 1fr);
     }
 
+
+    /* -------------------- */
     /* CONTACT - CONTACTAME */
+    /* -------------------- */
 
     #contact {
+        margin-top: -15vh;
         margin-bottom: 30vh;
     }
 
     #contact 
     #contact-description {
-        width: 70vh;
-    }
-
-    #contact input::placeholder, textarea::placeholder {
-        font-size: 0.9rem;
+        width: 95%;
     }
 
     #contact .half-input {
-        grid-template-columns: repeat(2, 36vh);
+        grid-template-columns: repeat(2, 45vh);
     }
 
     footer {
@@ -1204,23 +1319,25 @@ footer a {
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 830px) {
 
+    /* ----------------------- */
     /* HEADER - BARRA SUPERIOR */
-
+    /* ----------------------- */
     header {
-        margin: 0 3rem;
+        margin: 0 4rem;
     }
 
     header .nav-menu {
         display: none;
     }
 
+    /* ------------- */
     /* HOME - INICIO */
+    /* ------------- */
 
     #home {
-        margin: 5.5rem 0 0 3rem;
-        height: 37.5rem;
+        margin: 5.5rem 0 0 4.2rem;
     }
 
     #home .desarrollador {
@@ -1241,27 +1358,30 @@ footer a {
         margin-top: 1rem;
     }
 
+    /* ------------------------------------ */
     /* SKILLS ORBIT - ORBITA DE HABILIDADES */
+    /* ------------------------------------ */
 
     #orbit-skills {
         display: none;
     }
 
+    /* -------------------- */
     /* SKILLS - HABILIDADES */
+    /* -------------------- */
 
     #skills {
         width: 100%;
-        height: 25rem;
-        margin-top: 1rem;
+        margin-top: -10rem;
     }
 
     #skills .cards {
-        width: 45%;
+        width: 55%;
         grid-template-columns: repeat(1, 2fr);
     }
 
     #skills .card-logo {
-        padding: 4rem;
+        padding: 3.5rem;
     }
     
     #skills .card-title {
@@ -1270,49 +1390,49 @@ footer a {
     }
     
     #skills .cards hr {
-        margin-top: 0.2rem;
         margin-bottom: 1rem;
     }
 
     #skills .cards .card-description {
         width: 80%;
         margin: 0 auto;
-        font-size: 0.9rem;
+        font-size: 1rem;
         margin-top: 2rem;
         margin-bottom: 5rem;
     }
     
+    /* --------------------- */
     /* BRIEFCASE - PORTFOLIO */
+    /* --------------------- */
 
     #briefcase {
         width: 90%;
         margin: 90rem auto;
-        height: 42rem;
     }
 
     .title-seccion {
-        font-size: 2.5rem;
-    }
-
-    .title-seccion h2 {
-        color: #fff;
+        font-size: 2.2rem;
     }
 
     #briefcase .briefcase-proyects {
+        display: grid;
         grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0.5rem;
         grid-row-gap: 0.5rem;
     }
 
+    /* -------------------- */
     /* CONTACT - CONTACTAME */
+    /* -------------------- */
 
     #contact {
         margin-bottom: 5vh;
-        height: 50rem;
+        margin-top: -85rem;
     }
 
     #contact 
     #contact-description {
-        width: 47vh;
+        width: 70vh;
     }
 
     #contact .half-input {
@@ -1341,10 +1461,11 @@ footer a {
         display: none;
     }
 
+    /* ----------------------- */
     /* HEADER - BARRA SUPERIOR */
-
+    /* ----------------------- */
     header {
-        margin: 1rem 4rem;
+        margin: 0 4rem;
     }
 
     header .nav-menu {
@@ -1356,8 +1477,7 @@ footer a {
     /* ------------- */
 
     #home {
-        margin: 5.5rem 0 0 4rem;
-        height: 50rem;
+        margin: 5.5rem 0 0 4.2rem;
     }
 
     #home .desarrollador {
@@ -1378,28 +1498,29 @@ footer a {
         margin-top: 1rem;
     }
 
+    /* ------------------------------------ */
     /* SKILLS ORBIT - ORBITA DE HABILIDADES */
+    /* ------------------------------------ */
 
     #orbit-skills {
         display: none;
     }
 
+    /* -------------------- */
     /* SKILLS - HABILIDADES */
+    /* -------------------- */
 
     #skills {
         margin-top: -10rem;
-        height: 20rem;
     }
     
     #skills .cards {
-        width: 55%;
+        width: 75%;
         grid-template-columns: repeat(1, 2fr);
-        gap: 4rem;
     }
 
     #skills .card-logo {
         padding: 3.5rem;
-        font-size: 1.5rem;
     }
     
     #skills .card-title {
@@ -1412,14 +1533,16 @@ footer a {
     }
 
     #skills .cards .card-description {
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
-        font-size: 0.9rem;
+        font-size: 1rem;
         margin-top: 2rem;
         margin-bottom: 3rem;
     }
     
+    /* --------------------- */
     /* BRIEFCASE - PORTFOLIO */
+    /* --------------------- */
 
     #briefcase {
         width: 90%;
@@ -1437,18 +1560,18 @@ footer a {
         grid-row-gap: 0.5rem;
     }
 
+    /* -------------------- */
     /* CONTACT - CONTACTAME */
+    /* -------------------- */
 
     #contact {
-        margin-bottom: 1rem;
-        height: 56.25;
-        width: 100%;
+        margin-bottom: 5vh;
+        margin-top: -85rem;
     }
 
     #contact 
     #contact-description {
         width: 45vh;
-        height: 20rem;
     }
 
     #contact .half-input {
@@ -1457,7 +1580,7 @@ footer a {
     }
 
     #contact input::placeholder, textarea::placeholder {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
     }
 
     footer {
@@ -1472,20 +1595,27 @@ footer a {
 
 @media screen and (max-width: 490px) {
 
+    #background {
+        display: none;
+    }
+
+    /* ----------------------- */
     /* HEADER - BARRA SUPERIOR */
+    /* ----------------------- */
     header {
-        margin: 1rem 1.5rem;
+        margin: 0 1rem;
     }
 
     header .nav-menu {
         display: none;
     }
 
+    /* ------------- */
     /* HOME - INICIO */
+    /* ------------- */
 
     #home {
-        margin: 3rem 0 0 1.5rem;
-        height: 35rem;
+        margin: 5.5rem 0 0 1rem;
     }
 
     #home .desarrollador {
@@ -1507,26 +1637,33 @@ footer a {
         margin-top: 1rem;
     }
 
+    /* ------------------------------------ */
     /* SKILLS ORBIT - ORBITA DE HABILIDADES */
+    /* ------------------------------------ */
 
     #orbit-skills {
         display: none;
     }
 
+    /* -------------------- */
     /* SKILLS - HABILIDADES */
+    /* -------------------- */
+
+    #skills {
+        margin-top: -10rem;
+    }
     
     #skills .cards {
         width: 75%;
-        gap: 1.5rem;
         grid-template-columns: repeat(1, 2fr);
     }
 
     #skills .card-logo {
-        padding: 3.3rem;
+        padding: 3.5rem;
     }
     
     #skills .card-title {
-        font-size: 1.1rem;
+        font-size: 1.25rem;
         letter-spacing: 2px;
     }
     
@@ -1542,12 +1679,13 @@ footer a {
         margin-bottom: 1rem;
     }
     
+    /* --------------------- */
     /* BRIEFCASE - PORTFOLIO */
+    /* --------------------- */
 
     #briefcase {
         width: 90%;
-        margin: 60rem auto 45rem;
-        height: 42rem;
+        margin: 80rem auto 0 auto;
     }
 
     .title-seccion {
@@ -1561,19 +1699,23 @@ footer a {
         grid-row-gap: 0.5rem;
     }
 
+    /* -------------------- */
     /* CONTACT - CONTACTAME */
+    /* -------------------- */
 
     #contact {
-        margin: -15rem auto 5rem;
+        margin-bottom: 5vh;
+        margin-top: 7rem;
+    }
+
+    #contact 
+    #contact-description {
+        width: 35vh;
     }
 
     #contact .half-input {
         grid-template-columns: repeat(1, 1fr);
         gap: 0.62rem;
-    }
-
-    #contact #contact-description {
-        width: 35vh;
     }
 
     #contact input,
@@ -1586,9 +1728,8 @@ footer a {
         font-size: 0.7rem;
     }
 
-    #contact .btn-enviar {
-        width: 10rem;
-        height: 3rem;
+    #contact textarea {
+        height: 30vh;
     }
 
     footer {
@@ -1602,32 +1743,33 @@ footer a {
 }
 
 @media screen and (max-width: 330px) {
-    
 
+    /* ----------------------- */
     /* HEADER - BARRA SUPERIOR */
-
+    /* ----------------------- */
     header {
-        margin: 1rem 1.5rem;
+        margin: 1rem 1rem;
     }
 
     header .nav-menu {
         display: none;
     }
 
+    /* ------------- */
     /* HOME - INICIO */
+    /* ------------- */
 
     #home {
-        margin: 2.5rem 0 0 1.5rem;
-        height: 35rem;
+        margin: 5.5rem 0 0 1rem;
     }
 
     #home .desarrollador {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     #home .description {
         font-size: 0.7rem;
-        width: 97%;
+        width: 90%;
     }
 
     #home .cv-download {
@@ -1640,25 +1782,33 @@ footer a {
         margin-top: 1rem;
     }
 
+    /* ------------------------------------ */
     /* SKILLS ORBIT - ORBITA DE HABILIDADES */
+    /* ------------------------------------ */
 
     #orbit-skills {
         display: none;
     }
 
+    /* -------------------- */
     /* SKILLS - HABILIDADES */
+    /* -------------------- */
 
+    #skills {
+        margin-top: -10rem;
+    }
+    
     #skills .cards {
         width: 75%;
         grid-template-columns: repeat(1, 2fr);
     }
 
     #skills .card-logo {
-        padding: 3.2rem;
+        padding: 3.5rem;
     }
     
     #skills .card-title {
-        font-size: 1rem;
+        font-size: 1.25rem;
         letter-spacing: 2px;
     }
     
@@ -1669,17 +1819,18 @@ footer a {
     #skills .cards .card-description {
         width: 80%;
         margin: 0 auto;
-        font-size: 0.6rem;
-        margin-top: 1rem;
+        font-size: 0.8rem;
+        margin-top: 2rem;
         margin-bottom: 1rem;
     }
     
+    /* --------------------- */
     /* BRIEFCASE - PORTFOLIO */
+    /* --------------------- */
 
     #briefcase {
         width: 90%;
-        margin: 60rem auto 45rem;
-        height: 42rem;
+        margin: 80rem auto 0 auto;
     }
 
     .title-seccion {
@@ -1693,10 +1844,18 @@ footer a {
         grid-row-gap: 0.5rem;
     }
 
+        /* -------------------- */
     /* CONTACT - CONTACTAME */
+    /* -------------------- */
 
     #contact {
-        margin: -15rem auto 5rem;
+        margin-bottom: 5vh;
+        margin-top: 7rem;
+    }
+
+    #contact 
+    #contact-description {
+        width: 35vh;
     }
 
     #contact .half-input {
@@ -1706,12 +1865,12 @@ footer a {
 
     #contact input,
     #contact textarea {
-        padding: 0.9rem;
-        border-radius: 1.25rem;
-    }
+    padding: 0.9rem;
+    border-radius: 1.25rem;
+}
 
     #contact input::placeholder, textarea::placeholder {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
 
     #contact textarea {
@@ -1720,10 +1879,6 @@ footer a {
 
     footer {
         padding: 1rem;
-    }
-
-    footer p {
-        font-size: 0.8rem;
     }
 
     footer a {

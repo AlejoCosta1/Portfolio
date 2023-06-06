@@ -16,7 +16,7 @@
     <!-- ----- -->
 
     <section id="background">
-        <div class="stars">
+        <div class="stars heightMax-Stars">
             <span style="--i:55;"></span>
             <span style="--i:39;"></span>
             <span style="--i:72;"></span>
@@ -103,7 +103,18 @@
             <span style="--i:78;"></span>
             <span style="--i:90;"></span>
         </div>
+        <script>
+            //Las estrellas necesitan el alto maximo disponible para adaptars su punto de partida.
+                window.addEventListener('load', function() {
+                var windowHeight = window.innerHeight;
+                 var translateYValue = windowHeight - (windowHeight * 1.5);
+
+                var animatedElement = document.querySelector('.heightMax-Stars');
+                animatedElement.style.transform = 'translateY(' + translateYValue + 'px)';
+            });
+        </script>
     </section>
+
 
     <!-- ---------------------------- -->
     <!-- HEADER - BARRA DE NAVEGACION -->
@@ -199,7 +210,7 @@
 
     <section id="briefcase">
         <h3 class="title-seccion" data-aos="zoom-in">Mis Proyectos</h3>
-        <div class="briefcase-proyects">
+        <div class="briefcase-proyects max-width">
             <div class="proyect">
                 <div class="overlay"></div>
                 <img data-aos="zoom-in-down" src="img/proyecto1.jpg" alt="">
@@ -261,7 +272,7 @@
     <!-- C O N T A C T -->
     <!-- ------------- -->
 
-    <section id="contact" data-aos="zoom-in" data-aos-duration="2500">
+    <section class="max-width" id="contact" data-aos="zoom-in" data-aos-duration="2500">
         <h3 class="title-seccion">Contactame ahora</h3>
             <form action="">
                 <div class="half-input">

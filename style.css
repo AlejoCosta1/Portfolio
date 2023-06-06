@@ -1545,8 +1545,9 @@ footer a {
     /* BRIEFCASE - PORTFOLIO */
 
     #briefcase {
+        margin-top: 70rem;
         width: 90%;
-        margin: 80rem auto 0 auto;
+        height: 2vh;
     }
 
     .title-seccion {
@@ -1563,21 +1564,16 @@ footer a {
     /* CONTACT - CONTACTAME */
 
     #contact {
-        margin-top: 55rem;
-    }
-
-    #contact 
-    #contact-description {
-    }
-
-    #contact .btn-enviar {
-        width: 10rem;
-        height: 3rem;
+        margin: auto;
     }
 
     #contact .half-input {
         grid-template-columns: repeat(1, 1fr);
         gap: 0.62rem;
+    }
+
+    #contact #contact-description {
+        width: 35vh;
     }
 
     #contact input,
@@ -1588,6 +1584,11 @@ footer a {
 
     #contact input::placeholder, textarea::placeholder {
         font-size: 0.7rem;
+    }
+
+    #contact .btn-enviar {
+        width: 10rem;
+        height: 3rem;
     }
 
     footer {
@@ -1677,7 +1678,8 @@ footer a {
 
     #briefcase {
         width: 90%;
-        margin: 60rem auto 0 auto;
+        margin: 60rem auto 45rem;
+        height: 42rem;
     }
 
     .title-seccion {
@@ -1694,14 +1696,9 @@ footer a {
     /* CONTACT - CONTACTAME */
 
     #contact {
-        margin-top: 35rem;
+        margin: -15rem auto 5rem;
     }
-
-    #contact 
-    #contact-description {
-        padding: 1rem 0;
-    }
-
+    
     #contact .half-input {
         grid-template-columns: repeat(1, 1fr);
         gap: 0.62rem;
@@ -1709,8 +1706,8 @@ footer a {
 
     #contact input,
     #contact textarea {
-    padding: 0.9rem;
-    border-radius: 1.25rem;
+        padding: 0.9rem;
+        border-radius: 1.25rem;
     }
 
     #contact input::placeholder, textarea::placeholder {

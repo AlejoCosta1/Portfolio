@@ -1545,9 +1545,9 @@ footer a {
     /* BRIEFCASE - PORTFOLIO */
 
     #briefcase {
-        margin-top: 70rem;
         width: 90%;
-        height: 2vh;
+        margin: 60rem auto 45rem;
+        height: 42rem;
     }
 
     .title-seccion {
@@ -1698,7 +1698,7 @@ footer a {
     #contact {
         margin: -15rem auto 5rem;
     }
-    
+
     #contact .half-input {
         grid-template-columns: repeat(1, 1fr);
         gap: 0.62rem;

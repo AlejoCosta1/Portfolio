@@ -38,7 +38,7 @@ body {
 /* ANIMATIONS - ANIMACIONES */
 /* ------------------------ */
 
-@keyframes translateY-animation {
+@keyframes starsAnimation {
     0% {
         transform: translateY(240rem) scale(0);
     }
@@ -82,7 +82,7 @@ body {
     border-radius: 50%;
     opacity: 0.8;
     box-shadow: 0 0 0 0.625rem #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
-    animation: translateY-animation 15s linear infinite;
+    animation: starsAnimation 15s linear infinite;
     animation-duration: calc(1200s / var(--i));
     z-index: -1;
 }
@@ -214,27 +214,28 @@ header .nav-menu li a:hover {
 /* SKILLS ORBIT - ORBITA DE HABILIDADES */
 /* ------------------------------------ */
 
-#orbit-skills {
+#skills {
+    max-width: 100%;
     display: flex;
-    margin: auto;
+    margin: 0 auto;
     justify-content: center;
+    align-items: center;
     color: #fff;
 }
 
-#orbit-skills .first-orbit {
+#skills .first-orbit {
     width: 55rem;
     height: 55rem;
     border: dashed 0.5em;
     border-radius: 50%;
 }
 
-#orbit-skills .planets {
+#skills .planets {
     text-shadow: #00000084 1px 1px 0.1px;
-    display: flex;
-    justify-content: center;
+    position: absolute;
 }
 
-#orbit-skills .planet {
+#skills .planet {
     display: flex;
     align-items: center;
     position: absolute;
@@ -246,29 +247,31 @@ header .nav-menu li a:hover {
 }
 
 
-.fa-html5 {
+#skills .fa-html5 {
     background: linear-gradient(to right, #E54C21, #ff6c28);
-    margin-top: 52rem;
+    left: 24rem;
+    top: 51.5rem;
 }
 
-.fa-css3-alt {
+#skills .fa-css3-alt {
     background: linear-gradient(to right, #2465f1, #3f66f4);
-    margin-top: 23rem;
-    margin-left: 56rem;
+    left: 52rem;
+    top: 25.75rem;
 }
 
-.fa-js {
+#skills .fa-js {
     background: linear-gradient(to right, #F7DF1E, #d5bd07);
-    margin-right: 56rem;
-    margin-top: 23rem;
+    top: 25.75rem;
+    left: -3rem;
 }
 
-.fa-python {
+#skills .fa-python {
     background: linear-gradient(to right, #a6ff00, #eeff00);
-    margin-top: -3rem;
+    left: 24rem;
+    top: -3rem;
 }
 
-.sub-orbit {
+#skills .sub-orbit {
     position: absolute;
     width: 9rem;
     height: 9rem;
@@ -276,7 +279,7 @@ header .nav-menu li a:hover {
     border: solid 20px #ffffff1e;
 }
 
-.progress{
+#skills .progress{
     position: absolute;
     width: 9rem;
     height: 9rem;
@@ -284,43 +287,40 @@ header .nav-menu li a:hover {
     margin: 0 auto;
 }
 
-.html-progress {
+#skills .html-progress {
     border: solid 20px #E74F22;
     clip-path: circle(200px at -40px 0px);
 }
 
-.css-progress {
+#skills .css-progress {
     border: solid 20px #2465f1;
     clip-path: circle(150px at -10px 0px);
 }
 
-.js-progress {
+#skills .js-progress {
     border: solid 20px #F7DF1E;
     clip-path: circle(150px at 0px 0px);
 }
 
-.python-progress {
+#skills .python-progress {
     border: solid 20px #a6ff00;
     clip-path: circle(100px at 0px 0px);
 }
 
-
-/* HABILIDADES */
-
-#skills {
-    display: flex;
-    text-align: center;
-    margin-top: -45rem;
-}
+/* ------------------------------------ */
+/* CARDS SKILLS - CARTAS DE HABILIDADES */
+/* ------------------------------------ */
 
 #skills .cards {
     display: grid;
-    justify-content: space-around;
+    position: absolute;
     margin: auto;
+    color: #000;
+    text-align: center;
     width: 60%;
     height: 34rem;
     grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+    gap: 5%;
 }
 
 #skills .card-1,
@@ -397,7 +397,7 @@ header .nav-menu li a:hover {
 
 #briefcase {
     max-width: 100%;
-    margin: 40vh auto;
+    margin: 15rem auto;
     display: grid;
     justify-content: center;
 }
@@ -464,8 +464,8 @@ header .nav-menu li a:hover {
 /* ------------------ */
 
 #contact {
-    margin-top: -15vh;
-    margin-bottom: 10vh;
+    margin-top: -2vh;
+    margin-bottom: 10rem;
     width: 100%;
 }
 
@@ -473,6 +473,7 @@ header .nav-menu li a:hover {
     margin-top: 5vh;
     display: grid;
     justify-content: center;
+    align-items: center;
 }
 
 #contact 
@@ -549,32 +550,16 @@ footer a {
 
 @media screen and (max-width: 1600px) {
 
-    /* ------------------------ */
-    /* ANIMATIONS - ANIMACIONES */
-    /* ------------------------ */    
-
-    @keyframes translateY-animation {
-        0% {
-            transform: translateY(235rem) scale(0);
-        }
-        100% {
-            transform: translateY(-50vh) scale(0.5);
-            transform: translateX(-5vh) scale(0.25);
-        }
-    }
-
-
     /* ------------------------------------ */
     /* SKILLS ORBIT - ORBITA DE HABILIDADES */
     /* ------------------------------------ */
 
-
-    #orbit-skills .first-orbit {
+    #skills .first-orbit {
         width: 50rem;
         height: 50rem;
     }
 
-    #orbit-skills .planet {
+    #skills .planet {
         font-size: 2.5rem;
         width: 6.3rem;
         height: 6.3rem;
@@ -610,9 +595,9 @@ footer a {
         height: 8.1rem;
     }
 
-    /* -------------------- */
-    /* SKILLS - HABILIDADES */
-    /* -------------------- */
+    /* --------------------------------------- */
+    /* SKILLS CARDS - TARJETAS DE HABILIDADES */
+    /* -------------------------------------- */
 
     #skills .cards {
         margin-top: 3rem;
@@ -627,20 +612,6 @@ footer a {
 }
 
 @media screen and (max-width: 1366px) {
-
-    /* ------------------------ */
-    /* ANIMATIONS - ANIMACIONES */
-    /* ------------------------ */    
-
-    @keyframes translateY-animation {
-        0% {
-            transform: translateY(202rem) scale(0);
-        }
-        100% {
-            transform: translateY(-50vh) scale(0.5);
-            transform: translateX(-5vh) scale(0.25);
-        }
-    }
 
     /* ----------------------- */
     /* HEADER - BARRA SUPERIOR */
@@ -684,13 +655,13 @@ footer a {
     /* ------------------------------------ */
 
 
-    #orbit-skills .first-orbit {
+    #skills .first-orbit {
         margin-top: -10rem;
         width: 38.5rem;
         height: 38.5rem;
     }
 
-    #orbit-skills .planet {
+    #skills .planet {
         font-size: 2rem;
         width: 4.5rem;
         height: 4.5rem;
@@ -725,9 +696,9 @@ footer a {
         height: 6.3rem;
     }
 
-    /* -------------------- */
-    /* SKILLS - HABILIDADES */
-    /* -------------------- */
+    /* --------------------------------------- */
+    /* SKILLS CARDS - TARJETAS DE HABILIDADES */
+    /* -------------------------------------- */
 
     #skills {
         margin-top: -34.5rem;
@@ -786,20 +757,6 @@ footer a {
 }
 
 @media screen and (max-width: 1280px) {
-
-    /* ------------------------ */
-    /* ANIMATIONS - ANIMACIONES */
-    /* ------------------------ */    
-
-    @keyframes translateY-animation {
-        0% {
-            transform: translateY(190rem) scale(0);
-        }
-        100% {
-            transform: translateY(-50vh) scale(0.5);
-            transform: translateX(-5vh) scale(0.25);
-        }
-    }
 
     /* ------------- */
     /* HOME - INICIO */
@@ -885,9 +842,9 @@ footer a {
         border: solid 15px #a6ff00;
     }
 
-    /* -------------------- */
-    /* SKILLS - HABILIDADES */
-    /* -------------------- */
+    /* --------------------------------------- */
+    /* SKILLS CARDS - TARJETAS DE HABILIDADES */
+    /* -------------------------------------- */
 
     #skills {
         margin-top: -35rem;
@@ -954,20 +911,6 @@ footer a {
 }
 
 @media screen and (max-width: 1152px) {
-
-    /* ------------------------ */
-    /* ANIMATIONS - ANIMACIONES */
-    /* ------------------------ */    
-
-    @keyframes translateY-animation {
-        0% {
-            transform: translateY(200rem) scale(0);
-        }
-        100% {
-            transform: translateY(-50vh) scale(0.5);
-            transform: translateX(-5vh) scale(0.25);
-        }
-    }
 
     /* ----------------------- */
     /* HEADER - BARRA SUPERIOR */
@@ -1061,9 +1004,9 @@ footer a {
         border: solid 10px #a6ff00;
     }
 
-    /* -------------------- */
-    /* SKILLS - HABILIDADES */
-    /* -------------------- */
+    /* --------------------------------------- */
+    /* SKILLS CARDS - TARJETAS DE HABILIDADES */
+    /* -------------------------------------- */
 
     #skills {
         margin-top: -34rem;
@@ -1138,20 +1081,6 @@ footer a {
 
 @media screen and (max-width: 1024px) {
 
-    /* ------------------------ */
-    /* ANIMATIONS - ANIMACIONES */
-    /* ------------------------ */    
-
-    @keyframes translateY-animation {
-        0% {
-            transform: translateY(197rem) scale(0);
-        }
-        100% {
-            transform: translateY(-50vh) scale(0.5);
-            transform: translateX(0vh) scale(0.25);
-        }
-    }
-
     /* ------------- */
     /* HOME - INICIO */
     /* ------------- */
@@ -1177,90 +1106,89 @@ footer a {
     /* SKILLS ORBIT - ORBITA DE HABILIDADES */
     /* ------------------------------------ */
 
-
-    #orbit-skills .first-orbit {
-        margin-top: -5rem;
-        width: 30.25rem;
-        height: 30.25rem;
+    #skills {
+        margin-top: 0rem;
     }
 
-    #orbit-skills .first-orbit {
+    #skills .first-orbit {
+        width: 30rem;
+        height: 30rem;
         border: dashed 0.3rem;
     }
-    
 
-    #orbit-skills .planet {
+    #skills .planet {
         font-size: 1.4rem;
-        width: 3.5rem;
-        height: 3.5rem;
+        width: 4rem;
+        height: 4rem;
+        left: 0;
+        top: 0;
     }
 
 
-    .fa-html5 {
-        margin-top: 28rem;
+    #skills .fa-html5 {
+        left: 13rem;
+        top: -5.5rem;
     }
 
-    .fa-css3-alt {
-        margin-top: 13.8rem;
-        margin-left: 30.4rem;
+    #skills .fa-css3-alt {
+        top: -2rem;
+        left: -8rem;
     }
 
-    .fa-js {
-        margin-right: 30.4rem;
-        margin-top: 13.8rem;
+    #skills .fa-js {
+        top: -2rem;
+        left: -2rem;
     }
 
-    .fa-python {
-        margin-top: -1.8rem;
+    #skills .fa-python {
+        left: 13rem;
     }
 
-    .sub-orbit {
-        width: 4.5rem;
-        height: 4.5rem;
+    #skills .sub-orbit {
+        width: 5rem;
+        height: 5rem;
         border: solid 10px #ffffff1e;
     }
 
-    .progress{
-        width: 4.5rem;
-        height: 4.5rem;
+    #skills .progress{
+        width: 5rem;
+        height: 5rem;
     }
 
-    .html-progress {
+    #skills .html-progress {
         border: solid 10px #E74F22;
     }
     
-    .css-progress {
+    #skills .css-progress {
         border: solid 10px #2465f1;
     }
     
-    .js-progress {
+    #skills .js-progress {
         border: solid 10px #F7DF1E;
     }
     
-    .python-progress {
+    #skills .python-progress {
         border: solid 10px #a6ff00;
     }
 
-    /* -------------------- */
-    /* SKILLS - HABILIDADES */
-    /* -------------------- */
-
-    #skills {
-        margin-top: -29.5rem;
-    }
+    /* --------------------------------------- */
+    /* SKILLS CARDS - TARJETAS DE HABILIDADES */
+    /* -------------------------------------- */
     
     #skills .cards {
-        width: 85%;
+        width: 70%;
         height: 22rem;
         gap: 1rem;
+        margin: 0 auto 9.5rem auto;
     }
 
     #skills .card-logo {
-        padding: 2.8rem;
+        padding: 2.5rem;
+        font-size: 1.3rem;
     }
     
     #skills .card-title {
-        font-size: 1rem;
+        font-size: 0.9rem;
         letter-spacing: 2px;
     }
     
@@ -1269,7 +1197,7 @@ footer a {
     }
 
     #skills .cards .card-description {
-        font-size: 0.65rem;
+        font-size: 0.6rem;
         margin-top: 1rem;
     }
     
@@ -1338,6 +1266,7 @@ footer a {
 
     #home {
         margin: 5.5rem 0 0 4.2rem;
+        margin-bottom: 5rem;
     }
 
     #home .desarrollador {
@@ -1362,17 +1291,16 @@ footer a {
     /* SKILLS ORBIT - ORBITA DE HABILIDADES */
     /* ------------------------------------ */
 
-    #orbit-skills {
+    #skills .first-orbit {
         display: none;
     }
 
-    /* -------------------- */
-    /* SKILLS - HABILIDADES */
-    /* -------------------- */
+    /* --------------------------------------- */
+    /* SKILLS CARDS - TARJETAS DE HABILIDADES */
+    /* -------------------------------------- */
 
     #skills {
-        width: 100%;
-        margin-top: -10rem;
+        width: 80%;
     }
 
     #skills .cards {
@@ -1407,7 +1335,7 @@ footer a {
 
     #briefcase {
         width: 90%;
-        margin: 90rem auto;
+        margin: 100rem auto 90rem auto;
     }
 
     .title-seccion {
@@ -1502,7 +1430,7 @@ footer a {
     /* SKILLS ORBIT - ORBITA DE HABILIDADES */
     /* ------------------------------------ */
 
-    #orbit-skills {
+    #skills .first-orbit {
         display: none;
     }
 
@@ -1511,7 +1439,7 @@ footer a {
     /* -------------------- */
 
     #skills {
-        margin-top: -10rem;
+        margin-top: 0rem;
     }
     
     #skills .cards {
@@ -1546,7 +1474,7 @@ footer a {
 
     #briefcase {
         width: 90%;
-        margin: 90rem auto;
+        margin: 100rem auto;
     }
 
     .title-seccion {
@@ -1641,7 +1569,7 @@ footer a {
     /* SKILLS ORBIT - ORBITA DE HABILIDADES */
     /* ------------------------------------ */
 
-    #orbit-skills {
+    #skills .first-orbit {
         display: none;
     }
 
@@ -1650,11 +1578,11 @@ footer a {
     /* -------------------- */
 
     #skills {
-        margin-top: -10rem;
+        margin-top: 0rem;
     }
     
     #skills .cards {
-        width: 75%;
+        width: 85%;
         grid-template-columns: repeat(1, 2fr);
     }
 
@@ -1685,7 +1613,7 @@ footer a {
 
     #briefcase {
         width: 90%;
-        margin: 80rem auto 0 auto;
+        margin: 90rem auto 0 auto;
     }
 
     .title-seccion {

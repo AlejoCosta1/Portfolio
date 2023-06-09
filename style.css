@@ -57,6 +57,7 @@ body {
     }
 }
 
+
 .rotating {
     animation: rotation 40s infinite linear;
 }
@@ -396,7 +397,7 @@ header .nav-menu li a:hover {
 /* -------------------- */
 
 #briefcase {
-    max-width: 100%;
+    width: 100%;
     margin: 15rem auto;
     display: grid;
     justify-content: center;
@@ -418,7 +419,6 @@ header .nav-menu li a:hover {
 
 #briefcase .proyect {
     display: flex;
-    max-width: 28.12rem;
     margin: 0.62rem 0.62rem;
     position: relative;
     overflow: hidden;
@@ -478,14 +478,14 @@ header .nav-menu li a:hover {
 
 #contact 
 #contact-description {
-    width: 140vh;
+    width: 69rem;
 }
 
 #contact .half-input {
     margin-bottom: 0.62rem;
     display: grid;
     justify-content: space-between;
-    grid-template-columns: repeat(2, 48%);
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
 
 #contact .input-full {
@@ -515,7 +515,7 @@ header .nav-menu li a:hover {
     margin: auto;
     cursor: pointer;
     transition: .5s;
-    padding: 0.625rem 1rem !important;
+    padding: 0.625rem 1rem;
 }
 
 #contact .btn-enviar:hover {
@@ -655,67 +655,88 @@ footer a {
     /* ------------------------------------ */
 
 
+    #skills {
+        margin-top: 0;
+    }
+
+
     #skills .first-orbit {
-        margin-top: -10rem;
-        width: 38.5rem;
-        height: 38.5rem;
+        width: 35.85rem;
+        height: 35.85rem;
+        border: dashed 0.4rem;
     }
 
     #skills .planet {
-        font-size: 2rem;
+        font-size: 1.5rem;
         width: 4.5rem;
         height: 4.5rem;
     }
 
 
-    .fa-html5 {
-        margin-top: 36.4rem;
+    #skills .fa-html5 {
+        margin-top: -18rem;
+        margin-left: -8rem;
     }
 
-    .fa-css3-alt {
-        margin-top: 16.1rem;
-        margin-left: 39.2rem;
+    #skills .fa-css3-alt {
+        margin-top: -10rem;
+        margin-left: -18.5rem;
     }
 
-    .fa-js {
-        margin-right: 39.2rem;
-        margin-top: 16.1rem;
+    #skills .fa-js {
+        margin-top: -10rem;
+        margin-left: 1rem;
     }
 
-    .fa-python {
-        margin-top: -2.1rem;
+    #skills .fa-python {
+        margin-top: 0.7rem;
+        margin-left: -8rem;
     }
 
-    .sub-orbit {
-        width: 6.3rem;
-        height: 6.3rem;
+    #skills .sub-orbit {
+        width: 6rem;
+        height: 6rem;
+        border: solid 10px #ffffff1e;
     }
 
-    .progress{
-        width: 6.3rem;
-        height: 6.3rem;
+    #skills .progress{
+        width: 6rem;
+        height: 6rem;
+    }
+
+    #skills .html-progress {
+        border: solid 10px #E74F22;
+    }
+    
+    #skills .css-progress {
+        border: solid 10px #2465f1;
+    }
+    
+    #skills .js-progress {
+        border: solid 10px #F7DF1E;
+    }
+    
+    #skills .python-progress {
+        border: solid 10px #a6ff00;
     }
 
     /* --------------------------------------- */
     /* SKILLS CARDS - TARJETAS DE HABILIDADES */
     /* -------------------------------------- */
-
-    #skills {
-        margin-top: -34.5rem;
-    }
     
     #skills .cards {
-        width: 65%;
-        height: 25rem;
+        width: 70%;
+        height: 12rem;
+        margin-bottom: 16rem;
     }
 
     #skills .card-logo {
-        padding: 3.5rem;
+        padding: 3.2rem;
+        font-size: 1.4rem;
     }
     
     #skills .card-title {
-        padding: 5px 0 0 0;
-        font-size: 1.25rem;
+        font-size: 1rem;
         letter-spacing: 2px;
     }
     
@@ -725,15 +746,20 @@ footer a {
 
     #skills .cards .card-description {
         font-size: 0.75rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
     }
-
+    
     /* --------------------- */
     /* BRIEFCASE - PORTFOLIO */
     /* --------------------- */
-    
+
     #briefcase {
-        max-width: 132vh;
-        margin: 45vh auto;
+        margin-top: 10rem;
+    }
+
+    .title-seccion {
+        font-size: 2.5rem;
     }
 
     /* -------------------- */
@@ -741,19 +767,8 @@ footer a {
     /* -------------------- */
 
     #contact {
-        margin-top: -15vh;
-        margin-bottom: 30vh;
+        margin-bottom: 8rem;
     }
-
-    #contact 
-    #contact-description {
-        width: 110vh;
-    }
-
-    #contact .half-input {
-        grid-template-columns: repeat(2, 56vh);
-    }
-
 }
 
 @media screen and (max-width: 1280px) {
@@ -763,7 +778,7 @@ footer a {
     /* ------------- */
 
     #home {
-        margin: 4.5rem 0 0 4.2rem;
+        margin: 12rem 0 0 6rem;
     }
 
     #home .desarrollador {
@@ -772,253 +787,97 @@ footer a {
 
     #home .description {
         font-size: 1.1rem;
+        width: 80%;
     }
 
     #home .cv-download {
-        width: 8.16rem;
-        height: 2.652rem;
+        width: 10rem;
+        height: 3rem;
     }
 
     /* ------------------------------------ */
     /* SKILLS ORBIT - ORBITA DE HABILIDADES */
     /* ------------------------------------ */
 
-
-    #orbit-skills .first-orbit {
-        margin-top: -10rem;
-        width: 36rem;
-        height: 36rem;
-    }
-
-    #orbit-skills .planet {
-        font-size: 2rem;
-        width: 4.5rem;
-        height: 4.5rem;
-    }
-
-
-    .fa-html5 {
-        margin-top: 33.8rem;
-    }
-
-    .fa-css3-alt {
-        margin-top: 16rem;
-        margin-left: 35.8rem;
-    }
-
-    .fa-js {
-        margin-right: 35.8rem;
-        margin-top: 14rem;
-    }
-
-    .fa-python {
-        margin-top: -2.1rem;
-    }
-
-    .sub-orbit {
-        width: 6.3rem;
-        height: 6.3rem;
-        border: solid 15px #ffffff1e;
-    }
-
-    .progress{
-        width: 6.3rem;
-        height: 6.3rem;
-    }
-
-    .html-progress {
-        border: solid 15px #E74F22;
-    }
-    
-    .css-progress {
-        border: solid 15px #2465f1;
-    }
-    
-    .js-progress {
-        border: solid 15px #F7DF1E;
-    }
-    
-    .python-progress {
-        border: solid 15px #a6ff00;
-    }
-
-    /* --------------------------------------- */
-    /* SKILLS CARDS - TARJETAS DE HABILIDADES */
-    /* -------------------------------------- */
 
     #skills {
-        margin-top: -35rem;
-    }
-    
-    #skills .cards {
-        width: 75%;
-        height: 25rem;
+        margin-top: 0;
     }
 
-    #skills .card-logo {
-        padding: 3rem;
-    }
-    
-    #skills .card-title {
-        font-size: 1.1rem;
-        letter-spacing: 2px;
-    }
-    
-    #skills .cards hr {
-        margin-bottom: 1rem;
-    }
 
-    #skills .cards .card-description {
-        font-size: 0.75rem;
-    }
-    
-    /* --------------------- */
-    /* BRIEFCASE - PORTFOLIO */
-    /* --------------------- */
-
-    #briefcase {
-        width: 120vh;
-        margin-top: 15rem;
-    }
-
-    .title-seccion {
-        font-size: 3rem;
-    }
-
-    #briefcase .proyects-options button {
-        width: 8.16rem;
-        height: 2.652rem;
-    }
-
-    /* -------------------- */
-    /* CONTACT - CONTACTAME */
-    /* -------------------- */
-
-    #contact {
-        margin-top: -15rem;
-        margin-bottom: 10rem;
-    }
-
-    #contact 
-    #contact-description {
-        width: 113vh;
-    }
-
-    #contact .half-input {
-        grid-template-columns: repeat(2, 57vh);
-    }
-
-}
-
-@media screen and (max-width: 1152px) {
-
-    /* ----------------------- */
-    /* HEADER - BARRA SUPERIOR */
-    /* ----------------------- */
-    header .nav-menu {
-        display: none;
-    }   
-
-    /* ------------- */
-    /* HOME - INICIO */
-    /* ------------- */
-
-    #home {
-        margin: 8.5rem 0 0 4.2rem;
-    }
-
-    #home .desarrollador {
-        font-size: 3rem;
-    }
-
-    #home .description {
-        font-size: 1.1rem;
-    }
-
-    #home .cv-download {
-        width: 8.16rem;
-        height: 2.652rem;
-    }
-
-    /* ------------------------------------ */
-    /* SKILLS ORBIT - ORBITA DE HABILIDADES */
-    /* ------------------------------------ */
-
-
-    #orbit-skills .first-orbit {
-        margin-top: -10rem;
+    #skills .first-orbit {
         width: 35.85rem;
         height: 35.85rem;
-        border: dashed 0.3rem;
+        border: dashed 0.4rem;
     }
 
-    #orbit-skills .planet {
+    #skills .planet {
         font-size: 1.5rem;
-        width: 3.5rem;
-        height: 3.5rem;
-    }
-
-
-    .fa-html5 {
-        margin-top: 33.8rem;
-    }
-
-    .fa-css3-alt {
-        margin-top: 14.95rem;
-        margin-left: 36.4rem;
-    }
-
-    .fa-js {
-        margin-right: 36.4rem;
-        margin-top: 14.95rem;
-    }
-
-    .fa-python {
-        margin-top: -1.95rem;
-    }
-
-    .sub-orbit {
         width: 4.5rem;
         height: 4.5rem;
+    }
+
+
+    #skills .fa-html5 {
+        margin-top: -18rem;
+        margin-left: -8rem;
+    }
+
+    #skills .fa-css3-alt {
+        margin-top: -10rem;
+        margin-left: -18.5rem;
+    }
+
+    #skills .fa-js {
+        margin-top: -10rem;
+        margin-left: 1rem;
+    }
+
+    #skills .fa-python {
+        margin-top: 0.7rem;
+        margin-left: -8rem;
+    }
+
+    #skills .sub-orbit {
+        width: 6rem;
+        height: 6rem;
         border: solid 10px #ffffff1e;
     }
 
-    .progress{
-        width: 4.5rem;
-        height: 4.5rem;
+    #skills .progress{
+        width: 6rem;
+        height: 6rem;
     }
 
-    .html-progress {
+    #skills .html-progress {
         border: solid 10px #E74F22;
     }
     
-    .css-progress {
+    #skills .css-progress {
         border: solid 10px #2465f1;
     }
     
-    .js-progress {
+    #skills .js-progress {
         border: solid 10px #F7DF1E;
     }
     
-    .python-progress {
+    #skills .python-progress {
         border: solid 10px #a6ff00;
     }
 
     /* --------------------------------------- */
     /* SKILLS CARDS - TARJETAS DE HABILIDADES */
     /* -------------------------------------- */
-
-    #skills {
-        margin-top: -34rem;
-    }
     
     #skills .cards {
-        width: 75%;
+        width: 70%;
         height: 25rem;
+        margin-bottom: 13rem;
     }
 
     #skills .card-logo {
-        padding: 3rem;
+        padding: 3.2rem;
+        font-size: 1.4rem;
     }
     
     #skills .card-title {
@@ -1040,7 +899,161 @@ footer a {
     /* --------------------- */
 
     #briefcase {
-        width: 90%;
+        margin-top: 10rem;
+    }
+
+    .title-seccion {
+        font-size: 2.5rem;
+    }
+
+    /* -------------------- */
+    /* CONTACT - CONTACTAME */
+    /* -------------------- */
+
+    #contact {
+        margin-top: -13rem;
+        margin-bottom: 10rem;
+    }
+
+}
+
+@media screen and (max-width: 1152px) {
+
+    /* ----------------------- */
+    /* HEADER - BARRA SUPERIOR */
+    /* ----------------------- */
+
+    header .nav-menu {
+        display: none;
+    }  
+
+    /* ------------- */
+    /* HOME - INICIO */
+    /* ------------- */
+
+    #home {
+        margin: 8.5rem 0 0 4.2rem;
+    }
+
+    #home .desarrollador {
+        font-size: 3rem;
+    }
+
+    #home .description {
+        font-size: 1.1rem;
+    }
+
+    #home .cv-download {
+        width: 12rem;
+        height: 3rem;
+        font-size: 0.8rem;
+    }
+
+
+    /* ------------------------------------ */
+    /* SKILLS ORBIT - ORBITA DE HABILIDADES */
+    /* ------------------------------------ */
+
+    #skills {
+        margin-top: 0;
+    }
+
+
+    #skills .first-orbit {
+        width: 35.85rem;
+        height: 35.85rem;
+        border: dashed 0.3rem;
+    }
+
+    #skills .planet {
+        font-size: 1.3rem;
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+
+    #skills .fa-html5 {
+        margin-top: -18rem;
+        margin-left: -8rem;
+    }
+
+    #skills .fa-css3-alt {
+        margin-top: -10rem;
+        margin-left: -18.5rem;
+    }
+
+    #skills .fa-js {
+        margin-top: -10rem;
+        margin-left: 1rem;
+    }
+
+    #skills .fa-python {
+        margin-top: 0.7rem;
+        margin-left: -8rem;
+    }
+
+    #skills .sub-orbit {
+        width: 6rem;
+        height: 6rem;
+        border: solid 10px #ffffff1e;
+    }
+
+    #skills .progress{
+        width: 6rem;
+        height: 6rem;
+    }
+
+    #skills .html-progress {
+        border: solid 10px #E74F22;
+    }
+    
+    #skills .css-progress {
+        border: solid 10px #2465f1;
+    }
+    
+    #skills .js-progress {
+        border: solid 10px #F7DF1E;
+    }
+    
+    #skills .python-progress {
+        border: solid 10px #a6ff00;
+    }
+
+    /* --------------------------------------- */
+    /* SKILLS CARDS - TARJETAS DE HABILIDADES */
+    /* -------------------------------------- */
+    
+    #skills .cards {
+        width: 75%;
+        height: 25rem;
+        margin-bottom: 12rem;
+    }
+
+    #skills .card-logo {
+        padding: 3.5rem;
+        font-size: 1.5rem;
+    }
+    
+    #skills .card-title {
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+    
+    #skills .cards hr {
+        margin-bottom: 1rem;
+    }
+
+    #skills .cards .card-description {
+        font-size: 0.75rem;
+        margin-top: 1rem;
+    }
+    
+    /* --------------------- */
+    /* BRIEFCASE - PORTFOLIO */
+    /* --------------------- */
+
+    #briefcase {
+        width: 70%;
     }
 
     .title-seccion {
@@ -1057,20 +1070,20 @@ footer a {
 
     #contact {
         margin-top: -15vh;
-        margin-bottom: 30vh;
+        margin-bottom: 8rem;
     }
 
     #contact 
     #contact-description {
-        width: 100vh;
+        width: 50rem;
     }
 
     #contact .half-input {
-        grid-template-columns: repeat(2, 51vh);
+        grid-template-columns: repeat(2, 25rem);
     }
 
     footer {
-        padding: 1rem;
+        padding: 1.5rem;
     }
 
     footer a {
@@ -1086,7 +1099,7 @@ footer a {
     /* ------------- */
 
     #home {
-        margin: 5.5rem 0 0 4.2rem;
+        margin: 5.5rem 0 0 6.2rem;
     }
 
     #home .desarrollador {
@@ -1126,22 +1139,23 @@ footer a {
 
 
     #skills .fa-html5 {
-        left: 13rem;
-        top: -5.5rem;
+        margin-top: 28rem;
+        margin-left: 13rem;
     }
 
     #skills .fa-css3-alt {
-        top: -2rem;
-        left: -8rem;
+        margin-top: 13rem;
+        margin-left: 28rem;
     }
 
     #skills .fa-js {
-        top: -2rem;
-        left: -2rem;
+        margin-top: 13rem;
+        margin-left: -2rem;
     }
 
     #skills .fa-python {
-        left: 13rem;
+        margin-top: -2rem;
+        margin-left: 13rem;
     }
 
     #skills .sub-orbit {
@@ -1305,7 +1319,7 @@ footer a {
 
     #skills .cards {
         width: 55%;
-        grid-template-columns: repeat(1, 2fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     #skills .card-logo {
@@ -1340,13 +1354,6 @@ footer a {
 
     .title-seccion {
         font-size: 2.2rem;
-    }
-
-    #briefcase .briefcase-proyects {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-column-gap: 0.5rem;
-        grid-row-gap: 0.5rem;
     }
 
     /* -------------------- */
@@ -1393,7 +1400,7 @@ footer a {
     /* HEADER - BARRA SUPERIOR */
     /* ----------------------- */
     header {
-        margin: 0 4rem;
+        margin: 2rem 2rem;
     }
 
     header .nav-menu {
@@ -1405,7 +1412,7 @@ footer a {
     /* ------------- */
 
     #home {
-        margin: 5.5rem 0 0 4.2rem;
+        margin: 5.5rem 0 0 2rem;
     }
 
     #home .desarrollador {
@@ -1439,7 +1446,7 @@ footer a {
     /* -------------------- */
 
     #skills {
-        margin-top: 0rem;
+        margin-top: 10rem;
     }
     
     #skills .cards {
@@ -1448,7 +1455,8 @@ footer a {
     }
 
     #skills .card-logo {
-        padding: 3.5rem;
+        padding: 4rem;
+        font-size: 1.5rem;
     }
     
     #skills .card-title {
@@ -1479,13 +1487,6 @@ footer a {
 
     .title-seccion {
         font-size: 2.2rem;
-    }
-
-    #briefcase .briefcase-proyects {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-column-gap: 0.5rem;
-        grid-row-gap: 0.5rem;
     }
 
     /* -------------------- */
@@ -1531,7 +1532,7 @@ footer a {
     /* HEADER - BARRA SUPERIOR */
     /* ----------------------- */
     header {
-        margin: 0 1rem;
+        margin: 2rem 2rem;
     }
 
     header .nav-menu {
@@ -1543,7 +1544,7 @@ footer a {
     /* ------------- */
 
     #home {
-        margin: 5.5rem 0 0 1rem;
+        margin: 5.5rem 0 0 2rem;
     }
 
     #home .desarrollador {
@@ -1613,18 +1614,15 @@ footer a {
 
     #briefcase {
         width: 90%;
-        margin: 90rem auto 0 auto;
+        margin: 80rem auto 0 auto;
+    }
+
+    #briefcase .briefcase-proyects {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .title-seccion {
         font-size: 1.8rem;
-    }
-
-    #briefcase .briefcase-proyects {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-column-gap: 0.5rem;
-        grid-row-gap: 0.5rem;
     }
 
     /* -------------------- */
@@ -1692,11 +1690,11 @@ footer a {
     /* ------------- */
 
     #home {
-        margin: 5.5rem 0 0 1rem;
+        margin: 3.5rem 0 0 1rem;
     }
 
     #home .desarrollador {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     #home .description {
@@ -1725,14 +1723,10 @@ footer a {
     /* -------------------- */
     /* SKILLS - HABILIDADES */
     /* -------------------- */
-
-    #skills {
-        margin-top: -10rem;
-    }
     
     #skills .cards {
-        width: 75%;
-        grid-template-columns: repeat(1, 2fr);
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     #skills .card-logo {
@@ -1745,14 +1739,14 @@ footer a {
     }
     
     #skills .cards hr {
-        margin-bottom: 1rem;
+        width: 80%;
     }
 
     #skills .cards .card-description {
         width: 80%;
         margin: 0 auto;
-        font-size: 0.8rem;
-        margin-top: 2rem;
+        font-size: 0.7rem;
+        margin-top: 1rem;
         margin-bottom: 1rem;
     }
     
@@ -1760,34 +1754,21 @@ footer a {
     /* BRIEFCASE - PORTFOLIO */
     /* --------------------- */
 
-    #briefcase {
-        width: 90%;
-        margin: 80rem auto 0 auto;
-    }
-
     .title-seccion {
         font-size: 1.8rem;
     }
 
     #briefcase .briefcase-proyects {
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-column-gap: 0.5rem;
-        grid-row-gap: 0.5rem;
     }
 
     /* -------------------- */
     /* CONTACT - CONTACTAME */
     /* -------------------- */
 
-    #contact {
-        margin-bottom: 5vh;
-        margin-top: 7rem;
-    }
-
     #contact 
     #contact-description {
-        width: 35vh;
+        width: 90%;
     }
 
     #contact .half-input {
@@ -1816,5 +1797,4 @@ footer a {
     footer a {
         font-size: 1.3rem;
     }
-
 }

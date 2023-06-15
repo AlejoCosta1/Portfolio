@@ -411,7 +411,6 @@ header .nav-menu li a:hover {
 
 #briefcase .briefcase-proyects {
     display: grid;
-    margin-top: 10px;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 0.5rem;
     grid-row-gap: 0.5rem;
@@ -485,7 +484,7 @@ header .nav-menu li a:hover {
     margin-bottom: 0.62rem;
     display: grid;
     justify-content: space-between;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(2, 35rem);
 }
 
 #contact .input-full {
@@ -567,22 +566,22 @@ footer a {
 
 
     .fa-html5 {
-
-        margin-top: 46.8rem;
+        margin-left: -2rem;
+        margin-top: -4.5rem;
     }
 
     .fa-css3-alt {
-        margin-top: 20.7rem;
-        margin-left: 50.4rem;
+        margin-top: -3rem;
+        margin-left: -5rem;
     }
 
     .fa-js {
-        margin-right: 50.4rem;
-        margin-top: 20.7rem;
+        margin-top: -3rem;
     }
 
     .fa-python {
-        margin-top: -2.7rem;
+        margin-left: -2rem;
+        margin-top: -0rem;
     }
 
     .sub-orbit {
@@ -600,7 +599,7 @@ footer a {
     /* -------------------------------------- */
 
     #skills .cards {
-        margin-top: 3rem;
+        margin-top: -2rem;
         width: 70%;
         height: 30rem;
     }
@@ -726,8 +725,8 @@ footer a {
     
     #skills .cards {
         width: 70%;
-        height: 12rem;
-        margin-bottom: 16rem;
+        height: 70%;
+        margin-bottom: -2rem;
     }
 
     #skills .card-logo {
@@ -872,7 +871,7 @@ footer a {
     #skills .cards {
         width: 70%;
         height: 25rem;
-        margin-bottom: 13rem;
+        margin-bottom: -2rem;
     }
 
     #skills .card-logo {
@@ -1026,7 +1025,7 @@ footer a {
     #skills .cards {
         width: 75%;
         height: 25rem;
-        margin-bottom: 12rem;
+        margin-bottom: 0rem;
     }
 
     #skills .card-logo {
@@ -1193,7 +1192,7 @@ footer a {
         width: 70%;
         height: 22rem;
         gap: 1rem;
-        margin: 0 auto 9.5rem auto;
+        margin: 0 auto 0rem auto;
     }
 
     #skills .card-logo {
